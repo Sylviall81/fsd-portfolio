@@ -1,12 +1,20 @@
 import React from 'react'
-import SignInForm from '../../components/AdminComponents/SignInForm'
+import LoginForm from '../../components/AdminComponents/LogInForm'
+import Header from '../../components/Header'
+
 
 export default function AdminLoginPage() {
   return (
-    <div>AdminLoginPage
+    <> 
+      <Header />
 
-    <SignInForm/>
+      <div className = "log-in-form-container-left">
+        <LoginForm />
+    
     </div>
+     <div className = "image-container-right"></div> 
+    
+    </>
   )
 }
 

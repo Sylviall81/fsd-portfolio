@@ -3,16 +3,16 @@ import ContactForm from '../components/ContactForm';
 import Header from '../components/Header';
 import ContentSection from '../components/ContentSection';
 
-export default function Main() {
+export default function ContactPage() {
   return (
-    <div>
-        <Header/>
+    <>
+    <Header/>
         
 
        <ContentSection/>
 
         <ContactForm/>
-        
-        </div>
+        </>
   )
 }
+

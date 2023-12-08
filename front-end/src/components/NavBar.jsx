@@ -11,13 +11,13 @@ export default function NavBar() {
       
       <ul className="navbar-links">
         <li>
-        
+        <Link to="/"> HOME</Link>
         </li>
         <li className="current">
-        <Link to="/projects"> Portfolio</Link>
+        <Link to="/projects"> PORTFOLIO</Link>
         </li>
         <li>
-        <Link to="/"> Contact</Link>
+        <Link to="/">CONTACT ME</Link>
         </li>
       </ul>
       {/* <a href="#" className="navbar__mobile">
