@@ -26,4 +26,21 @@ class AuthTest extends TestCase
 
         $this -> assertCount(1, User::all());
     }
+
+    public function test_user_can_login(): void
+    {
+        // $this ->postJson('api/register',[
+        //     'name' => 'Patricia',
+        //     'email' => 'patricia2023@gmail.com',
+        //     'password' => Hash::make('123456789')
+        // ]);
+
+        // $this -> assertCount(1, User::all());
+
+
+        
+    }
+
+
+
 }
