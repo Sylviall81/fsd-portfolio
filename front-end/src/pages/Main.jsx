@@ -7,6 +7,8 @@ export default function Main() {
   return (
     <div>
         <Header/>
+
+        <h1>HOME</h1>
         
 
        <ContentSection/>

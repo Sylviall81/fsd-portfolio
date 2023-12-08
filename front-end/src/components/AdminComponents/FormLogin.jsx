@@ -1,7 +1,8 @@
-import React from 'react';
-import AdminPanelIcon from '../../assets/icons/diseno-web.png'
+import React from 'react'
+import AdminPanelIcon from '../../assets/icons/codificacion-web-purple.png';
 
-export default function LoginForm() {
+
+export default function FormLogin() {
   return (
     <>
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -18,7 +19,6 @@ export default function LoginForm() {
  
          <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
            <form className="space-y-6" action="#" method="POST">
- 
              <div>
                <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                  Email address
@@ -76,7 +76,6 @@ export default function LoginForm() {
              </p>*/}
          </div>
        </div>
- 
      </>
   )
 }

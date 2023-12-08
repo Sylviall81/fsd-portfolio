@@ -1,6 +1,6 @@
 import React from 'react'
-import LoginForm from '../../components/AdminComponents/LogInForm'
-import Header from '../../components/Header'
+import Header from '../../components/Header';
+import FormLogin from '../../components/AdminComponents/FormLogin';
 
 
 export default function AdminLoginPage() {
@@ -8,8 +8,10 @@ export default function AdminLoginPage() {
     <> 
       <Header />
 
-      <div className = "log-in-form-container-left">
-        <LoginForm />
+      <div className = "form-log-in-container-left">
+
+        <FormLogin />
+        
     
     </div>
      <div className = "image-container-right"></div> 
