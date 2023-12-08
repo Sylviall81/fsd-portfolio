@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from '../../components/Header/Header';
 import FormLogin from '../../components/AdminComponents/FormLogin';
+import '../../index.css'
+
 
 
 export default function AdminLoginPage() {
