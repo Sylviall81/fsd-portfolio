@@ -7,11 +7,8 @@ export default function ContactPage() {
   return (
     <>
     <Header/>
-        
-
-       <ContentSection/>
-
-        <ContactForm/>
+    <h1>Contacto</h1>    
+    <ContactForm/>
         </>
   )
 }

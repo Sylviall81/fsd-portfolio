@@ -9,15 +9,15 @@ export default function NavBar() {
     
     <nav className="navbar">
       
-      <ul className="navbar-links">
+      <ul>
         <li>
         <Link to="/"> HOME</Link>
         </li>
-        <li className="current">
+        <li>
         <Link to="/projects"> PORTFOLIO</Link>
         </li>
         <li>
-        <Link to="/">CONTACT ME</Link>
+        <Link to="/contact">CONTACT ME</Link>
         </li>
       </ul>
       {/* <a href="#" className="navbar__mobile">
