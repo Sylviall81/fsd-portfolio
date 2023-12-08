@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactForm from '../components/ContactForm';
-import Header from '../components/Header';
-import ContentSection from '../components/ContentSection';
+import Header from '../components/Header/Header';
+
 
 export default function ContactPage() {
   return (
