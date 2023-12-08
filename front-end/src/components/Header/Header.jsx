@@ -15,13 +15,13 @@ const Header = () => {
           <li className="nav__item"><Link to="/contact" className="nav__link">Contact Me</Link></li>
         </ul>
 
-        <a id="nav__toggle" className="nav__burger" aria-label="open navigation">
+        {/* <a id="nav__toggle" className="nav__burger" aria-label="open navigation">
           <div className="nav__burger-lines" id="nav__burger-lines">
             <span className="nav__burger-line nav__burger-line--1"></span>
             <span className="nav__burger-line nav__burger-line--2"></span>
             <span className="nav__burger-line nav__burger-line--3"></span>
           </div>
-        </a>
+        </a> */}
       </nav>
     </header>
   );
