@@ -1,9 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom';
-import App from '../App';
+//import App from '../App';
+import Main from '../pages/Main';
+import AdminLoginPage from '../pages/adminPages/AdminLoginPage';
 
 const router = createBrowserRouter([
     { path: '/',
-    element: <App/>
+    element: <Main/>
+    },
+    { path: '/admin',
+    element: <AdminLoginPage/>
     }
 ])
 
