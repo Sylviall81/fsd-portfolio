@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../components/Header/Header'
-import Projects from '../components/Projects'
 
 export default function Portfolio() {
   return (
@@ -9,7 +8,7 @@ export default function Portfolio() {
    
         <h1>Portfolio</h1>
 
-        <Projects />
+       
         </div>
   )
 }
