@@ -1,25 +1,26 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Main from '../pages/Main';
+import Home from '../pages/Home';
+import AdminLogin from '../pages/admin-pages/AdminLogin';
+import Portfolio from '../pages/Portfolio';
+import ContactMe from '../pages/ContactMe';
 
 //import App from '../App';
-// import AdminLoginPage from '../pages/adminPages/AdminLoginPage';
-// import Portfolio from '../pages/Portfolio';
-// import ContactPage from '../pages/ContactPage';
+
 
 
 const router = createBrowserRouter([
     { path: '/',
-    element: <Main/>
+    element: <Home/>
+    },
+    { path: '/admin',
+    element: <AdminLogin/>
+    },
+    { path: '/portfolio',
+    element: <Portfolio/>
+    },
+    { path: '/contact-me',
+    element: <ContactMe/>
     }
-    // { path: '/admin',
-    // element: <AdminLoginPage/>
-    // },
-    // { path: '/projects',
-    // element: <Portfolio/>
-    // },
-    // { path: '/contact',
-    // element: <ContactPage/>
-    // }
 ])
 
 export default router;

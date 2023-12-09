@@ -1,15 +1,18 @@
 import React from 'react'
 
-export default function Portfolio() {
+function AdminPanel() {
   return (
     <div>
-        
+
         <h1>
-        Portfolio
+        AdminPanel
         </h1>
+
+
         
+
         </div>
   )
 }
 
- 
+export default AdminPanel
