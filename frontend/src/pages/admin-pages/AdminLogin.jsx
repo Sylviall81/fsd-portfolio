@@ -1,4 +1,7 @@
 import React from 'react'
+import LoginForm from '../../components/LoginForm/LoginForm'
+import RegisterForm from '../../components/RegisterForm/RegisterForm'
+
 
 function AdminLogin() {
   return (
@@ -6,21 +9,20 @@ function AdminLogin() {
         
         <h1>AdminLogin </h1>
 
+        <div className= "login-form-container-left">
+          <LoginForm/>
+        </div>
 
-<div>
-        <form action="POST">
+        <div className= "register-form-container">
+          <RegisterForm/>
+        </div>
 
-          <label htmlFor="email">Email</label>
-          <input placeholder= "admin-user@example.com" type="email" name="email" id="" />
-
-          <label htmlFor="password">Password</label>
-          <input type="password" name="password" id="" />
-
-          <button type="submit">Log In</button>
-  
-        </form>
+        <div className = "background-image-container-right">
 
         </div>
+
+
+
         </div>
   )
 }
