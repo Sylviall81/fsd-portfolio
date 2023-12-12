@@ -6,7 +6,7 @@
     align-items: flex-end;
 }
 
-.logo-container{
+.header-logo-container{
     width: 9em;
     height: 9em;   
     border-radius: 50%;
@@ -16,7 +16,7 @@
     
 } 
 
-.img-logo{
+.header-img-logo{
     width: 9em;
     height: 9em; 
     object-fit: cover;

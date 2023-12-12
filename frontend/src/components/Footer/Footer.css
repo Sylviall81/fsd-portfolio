@@ -1,0 +1,33 @@
+.footer-container{
+
+    background-color: var(--primary-color);
+    display:flex;
+    align-items: center;
+    height: 8em;
+    width: 100vw;
+   
+    
+}
+
+.logo-navlinks-container{
+    background-color: grey;
+    width: 60vw;
+    height: 6em;
+
+} 
+
+.footer-logo-container{
+    width: 7.0em;
+    height: 7.0em;   
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+   
+} 
+
+.footer-img-logo{
+    width: 7.0em;
+    height: 7.0em; 
+    object-fit: cover;
+    border-radius: 50%;
+}

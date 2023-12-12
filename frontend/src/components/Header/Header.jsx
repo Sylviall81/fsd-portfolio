@@ -12,15 +12,15 @@ function Header() {
 
         <Link to='/' >
 
-        <div className="logo-container">
-          <img className ="img-logo"
+        <div className="header-logo-container">
+          <img className ="header-img-logo"
             src='https://res.cloudinary.com/dsesprxhl/image/upload/v1702404502/portfolio/Handdrawn%20Circle%20Logo/2_ngmyne.png'
             alt=""
           /> 
         </div>
         </Link>
         <div>
-          <Navbar />
+          <Navbar/>
         </div>
 
       </header>
