@@ -4,8 +4,14 @@
     display:flex;
     align-items: center;
     height: 8em;
-    width: 100vw;
     justify-content: space-between;
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 10px;
     
 }
 
@@ -42,3 +48,14 @@
     margin-right: 12em;
     justify-content: space-between;
 }
+
+/* .copyright{
+    width: 20vw;
+    background-color: blueviolet;
+    display:flex;
+    
+}
+
+.social-network-copyright-container{
+
+} */
