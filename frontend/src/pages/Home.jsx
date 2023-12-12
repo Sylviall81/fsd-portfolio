@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
+import SocialNetworkIcon from '../components/SocialNetworkIcons/SocialNetworkIcon'
 
 function Home() {
   return (
@@ -8,6 +9,8 @@ function Home() {
         
         <Header/>
         <h1> Home </h1>
+
+        <SocialNetworkIcon />
 
 
         <Footer/>

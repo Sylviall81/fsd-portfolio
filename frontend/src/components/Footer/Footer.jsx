@@ -8,6 +8,8 @@ function Footer() {
     <>
       <footer className="footer-container">
 
+        <div className = "logo-navlinks-container">
+
           <Link to="/">
             <div className="footer-logo-container">
               <img
@@ -19,6 +21,8 @@ function Footer() {
           </Link>
         
           <Navbar textColor="#fafafa"/>
+
+          </div>
          
 
           

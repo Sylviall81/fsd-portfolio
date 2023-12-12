@@ -11,8 +11,11 @@
 
 .logo-navlinks-container{
     background-color: grey;
-    width: 60vw;
-    height: 6em;
+    width: 30vw;
+    height: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
 } 
 
