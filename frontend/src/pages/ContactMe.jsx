@@ -1,18 +1,13 @@
-import React from 'react'
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
+import React from "react";
+// import Header from '../components/Header/Header'
+// import Footer from '../components/Footer/Footer'
+import Layout from "../components/Layout";
 
 export default function ContactMe() {
   return (
-    <div>
-      <Header/>
+    <>
+      <Layout>
         <h1>Contact Me </h1>
-        
-
-
-<Footer/>
-
-        </div>
-  )
-}
-
+      </Layout>
+    </>
+  )}
