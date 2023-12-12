@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import "./Footer.css";
 import SocialNetworkIcon from "../SocialNetworkIcons/SocialNetworkIcon";
-import GithubIcon from '../../assets/icons/github.svg'
-import LinkedInIcon from '../../assets/icons/linkedin.svg'
-import EmailIcon from '../../assets/icons/email.png'
+import GithubIcon from '../../assets/icons/icon-github.png'
+import LinkedInIcon from '../../assets/icons/icons-linkedin.png'
+import EmailIcon from '../../assets/icons/icon-email.png'
 
 function Footer() {
   return (
@@ -32,7 +32,7 @@ function Footer() {
           <div className= 'footer-social-network-container'>
           <SocialNetworkIcon src={GithubIcon} url='https://github.com/Sylviall81' />
           <SocialNetworkIcon src={LinkedInIcon} url='https://www.linkedin.com/in/sylviall81/' />
-          <SocialNetworkIcon src={EmailIcon} url='https://github.com/Sylviall81' />
+          <SocialNetworkIcon src={EmailIcon} url='mailto:sylviall81@gmail.com'/>
           </div>
       
       </footer>
