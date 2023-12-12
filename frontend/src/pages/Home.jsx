@@ -1,19 +1,21 @@
 import React from 'react'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import SocialNetworkIcon from '../components/SocialNetworkIcons/SocialNetworkIcon'
+import Layout from '../components/Layout'
 
 function Home() {
   return (
     <div>
+
+      <Layout>
         
-        <Header/>
+     
         <h1> Home </h1>
 
        
 
 
-        <Footer/>
+        </Layout>
         
         </div>
   )
