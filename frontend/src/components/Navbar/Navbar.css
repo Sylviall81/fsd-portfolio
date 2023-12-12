@@ -1,0 +1,16 @@
+
+.navlinks-container{
+  height: 2em;
+  width:20vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+}
+
+.navlink{
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+
+}

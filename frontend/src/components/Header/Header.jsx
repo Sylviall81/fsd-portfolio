@@ -1,15 +1,21 @@
 import React from "react";
+import Navbar from "../Navbar/Navbar";
+import './Header.css'
+
 
 
 function Header() {
   return (
     <>
-      <header>
+      <header className = "header">
         <div className="logo-container">
-          <img
-            src="https://res.cloudinary.com/dsesprxhl/image/upload/v1702051982/portfolio/logo_lc45fc.png"
+          <img className ="img-logo"
+            src='https://res.cloudinary.com/dsesprxhl/image/upload/v1702404502/portfolio/Handdrawn%20Circle%20Logo/2_ngmyne.png'
             alt=""
-          />
+          /> 
+        </div>
+        <div>
+          <Navbar />
         </div>
 
       </header>
