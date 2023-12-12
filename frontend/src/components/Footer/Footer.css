@@ -5,17 +5,18 @@
     align-items: center;
     height: 8em;
     width: 100vw;
-   
+    justify-content: space-between;
     
 }
 
 .logo-navlinks-container{
     background-color: grey;
     width: 30vw;
-    height: 7em;
+    height: 7.5em;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-left: 6rem;;
 
 } 
 
@@ -33,4 +34,9 @@
     height: 7.0em; 
     object-fit: cover;
     border-radius: 50%;
+}
+
+.footer-social-network-container{
+    display: flex;
+    width: 7.5vw;
 }

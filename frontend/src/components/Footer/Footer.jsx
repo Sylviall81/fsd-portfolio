@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import "./Footer.css";
+import SocialNetworkIcon from "../SocialNetworkIcons/SocialNetworkIcon";
+import GithubIcon from '../../assets/icons/github.svg'
+import LinkedInIcon from '../../assets/icons/linkedin.svg'
+import EmailIcon from '../../assets/icons/email.png'
 
 function Footer() {
   return (
@@ -23,12 +27,12 @@ function Footer() {
           <Navbar textColor="#fafafa"/>
 
           </div>
-         
-
           
-
-          <div>
-
+          
+          <div className= 'footer-social-network-container'>
+          <SocialNetworkIcon src={GithubIcon} url='https://github.com/Sylviall81' />
+          <SocialNetworkIcon src={LinkedInIcon} url='https://www.linkedin.com/in/sylviall81/' />
+          <SocialNetworkIcon src={EmailIcon} url='https://github.com/Sylviall81' />
           </div>
       
       </footer>

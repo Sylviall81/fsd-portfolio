@@ -1,7 +1,9 @@
 .social-network-icon-container{
-    display: flex;
-    width: 8vw;
-    background-color: aqua;
+    width: 2vw;
     justify-content: space-evenly;
+} 
+
+.social-network-icons{
+ background-color: #ffffff;
 
 }
