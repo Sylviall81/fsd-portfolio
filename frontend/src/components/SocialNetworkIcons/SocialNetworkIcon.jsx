@@ -4,19 +4,14 @@ import React from 'react'
 import './SocialNetworkIcon.css'
 
 
-const SocialNetworkIcon = ({ color, src, url }) =>  {
+const SocialNetworkIcon = ({ src, url }) =>  {
   return (
    <>
    <div className = "social-network-icon-container">
    <a href= {url} target = "_blank" rel = "noreferrer">
-   <img className ="social-network-icons" src={src} alt="" style={{ fill: color }}/>
+   <img className ="social-network-icons" src={src} alt="social network link"/>
    </a>
-   {/* <a href="mailto:sylviall81@gmail.com" target = "_blank" rel = "noreferrer">
-   <img src={src} alt="" style={{ fill: color }} />
-   </a>
-   <a href="https://www.linkedin.com/in/sylviall81/" target = "_blank" rel = "noreferrer">
-   <img src={src} alt="" style={{ fill: color }}/>
-   </a> */}
+   
    </div>
 
 

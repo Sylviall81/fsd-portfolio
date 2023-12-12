@@ -29,6 +29,7 @@ function Footer() {
           </div>
           
           
+
           <div className= 'footer-social-network-container'>
           <SocialNetworkIcon src={GithubIcon} url='https://github.com/Sylviall81' />
           <SocialNetworkIcon src={LinkedInIcon} url='https://www.linkedin.com/in/sylviall81/' />
@@ -36,6 +37,9 @@ function Footer() {
           </div>
       
       </footer>
+      <div className="copyright">
+      <p>&copy; 2023 Sylvia Llorente | Full Stack Developer</p>
+      </div>
     </>
   );
 }

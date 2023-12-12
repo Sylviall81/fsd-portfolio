@@ -10,7 +10,7 @@ function Home() {
         <Header/>
         <h1> Home </h1>
 
-        <SocialNetworkIcon />
+       
 
 
         <Footer/>
