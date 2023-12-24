@@ -1,0 +1,11 @@
+.neutral-button{
+    border: solid 0.2px var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+
+}
+
+.neutral-button:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}

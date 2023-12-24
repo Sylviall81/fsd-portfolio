@@ -4,13 +4,14 @@
 :root{
   --primary-color: #33323D;
   --accent-color: #5271ff;
+  --bg-color: #FAFAFA;
 }
 
 body {
   font-family: 'Public Sans', sans-serif;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FAFAFA;
+  background-color: var(--bg-color);
   margin: 0;
   padding: 0;
   min-height: 100vh;

@@ -1,9 +1,11 @@
 import React from 'react'
+import './LoginForm.css'
 
 function LoginForm() {
   return (
 
     <div>
+      <div className = "login-form-container">
 
         <h3>Login Form</h3>
             <form action="POST">
@@ -15,6 +17,8 @@ function LoginForm() {
 
             <button type="submit">Log In</button>
         </form>
+
+        </div>
 
 
     </div>
