@@ -53,13 +53,12 @@
 
 
 
-/* .copyright{
-    width: 20vw;
-    background-color: blueviolet;
+.copyright{
+    width: 20%;
     display:flex;
-    
+    align-self: flex-end;   
 }
 
-.social-network-copyright-container{
-
+/* .social-network-copyright-container{
+    width: 70%;
 } */

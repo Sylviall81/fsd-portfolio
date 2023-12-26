@@ -46,11 +46,12 @@ function Footer() {
           </div>
        
 
-        {/* <div className="copyright">
-          <p>&copy; 2023 Sylvia Llorente | Full Stack Developer</p>
-        </div> */}
+          {/* <div className="copyright">
+          &copy; 2023 Sylvia Llorente | Full Stack Developer
+        </div>  */}
 
         </div>
+       
       </footer>
     </>
   );

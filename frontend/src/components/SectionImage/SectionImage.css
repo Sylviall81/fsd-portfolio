@@ -1,8 +1,8 @@
 .image-section-container{ 
-    width:60vw;
     display: flex;
     justify-content: space-around;
-    margin: 6em 30em;
+    width: 70%;
+    margin: 8em 12.5em;
 } 
 
 .aside-image-container{
