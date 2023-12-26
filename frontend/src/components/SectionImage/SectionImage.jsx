@@ -17,11 +17,17 @@ const SectionImage = ({src,title,text}) => {
 
         <p className= "text-content">{text}</p>
 
+        <div className = 'button-container'>
         <NeutralButton text='GO TO PORTFOLIO' link= "/portfolio" />
+        </div>
+
+        </div>
 
         
 
-    </div>
+        
+
+    
 
     </div>
 
