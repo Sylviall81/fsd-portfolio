@@ -15,7 +15,7 @@ function Header() {
         <div className="header-logo-container">
           <img className ="header-img-logo"
             src='https://res.cloudinary.com/dsesprxhl/image/upload/v1702051982/portfolio/logo_lc45fc.png'
-            alt=""
+            alt="sylvia Llorente Full stack developer logo"
           /> 
         </div>
         </Link>

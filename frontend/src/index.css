@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&display=swap");
 
 :root{
   --primary-color: #33323D;
@@ -9,7 +9,7 @@
   --title-font:'Ibarra Real Nova', serif;
 }
 
-body {
+body{
   font-family: 'Public Sans', sans-serif;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,6 +20,7 @@ body {
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
+  text-decoration: none;
 }
 
 code {

@@ -2,7 +2,6 @@ import React from 'react'
 import './SectionHero.css'
 import ColorButton from '../ColorButton/ColorButton'
 
-
 const SectionHero = ({text}) => {
   return (
     <>
