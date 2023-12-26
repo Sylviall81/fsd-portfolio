@@ -1,0 +1,15 @@
+.color-button{
+    color: var(--button-hover-color);
+    background-color: #203a4c;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    width: 12em;
+    height: 3.1em;
+    letter-spacing: 1px;
+}
+
+.color-button:hover {
+    background-color: #5FB4A2;
+    color: var(--bg-color);
+}
