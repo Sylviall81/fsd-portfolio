@@ -17,7 +17,7 @@ const SectionImage = ({src,title,text}) => {
 
         <p className= "text-content">{text}</p>
 
-        <NeutralButton text='GO TO PORTFOLIO'/>
+        <NeutralButton text='GO TO PORTFOLIO' link= "/portfolio" />
 
         
 

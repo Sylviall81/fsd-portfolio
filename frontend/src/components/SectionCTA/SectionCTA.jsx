@@ -15,7 +15,7 @@ const SectionCTA = ({title}) =>{
 
         </div>
     
-    <NeutralButton text= 'CONTACT ME'/>
+    <NeutralButton text= 'CONTACT ME' link="/contact-me"/>
 
     </div>
     
