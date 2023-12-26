@@ -16,5 +16,12 @@
 }
 
 .navlink:hover{
-    color: var(--accent-color);
+    color: #5FB4A2;
+}
+
+.active{
+
+  font-weight: bold;
+  color: #5FB4A2;
+
 }

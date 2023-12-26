@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import './Navbar.css'
 
  const Navbar = ({ textColor }) => {
@@ -7,11 +7,11 @@ import './Navbar.css'
     <div className="navlinks-container" >
 
 
-        <Link className='navlink' to= "/" style={{ color: textColor }}>HOME</Link>
+        <NavLink className='navlink' exact to= "/" activeClassName= 'active' style={{ color: textColor }}>HOME</NavLink>
 
-        <Link className='navlink' to= "/portfolio" style={{ color: textColor }}>PORTFOLIO</Link>
+        <NavLink className='navlink' exact to= "/portfolio" activeClassName= 'active' style={{ color: textColor }}>PORTFOLIO</NavLink>
 
-        <Link className='navlink' to= "/contact-me" style={{ color: textColor }}>CONTACT ME</Link> 
+        <NavLink className='navlink' exact to= "/contact-me" activeClassName= 'active' style={{ color: textColor }}>CONTACT ME</NavLink> 
         
 
     </div>

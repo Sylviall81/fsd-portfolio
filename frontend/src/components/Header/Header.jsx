@@ -14,7 +14,7 @@ function Header() {
 
         <div className="header-logo-container">
           <img className ="header-img-logo"
-            src='https://res.cloudinary.com/dsesprxhl/image/upload/v1702401092/2_wqijbo.png'
+            src='https://res.cloudinary.com/dsesprxhl/image/upload/v1702051982/portfolio/logo_lc45fc.png'
             alt=""
           /> 
         </div>

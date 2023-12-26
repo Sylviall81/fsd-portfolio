@@ -1,8 +1,8 @@
 .hero-section-container{
     position: relative;
     background-image: url('https://res.cloudinary.com/dsesprxhl/image/upload/v1702062089/portfolio/pexels-picjumbocom-196655_jsplwv.jpg');
-    width:60vw;
-    height: 40em;
+    width:1113px;
+    height: 604px;
     display: flex;
     justify-content: space-around;
     margin: 6em 30em;
@@ -15,7 +15,7 @@
  
     background-color: #ffff;
     width: 45%;
-    height: 60%;
+    
     font-size: 3em; 
     font-family: var(--title-font);
 }

@@ -1,12 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const ColorButton = ({text,link}) => {
   return (
     <>
 
 <>
-    <Link to={link}>
+    <Link smooth to={link}>
         <button className = "color-button">{text}</button>
     </Link>
     </>

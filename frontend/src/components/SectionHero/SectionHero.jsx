@@ -1,7 +1,9 @@
 import React from 'react'
 import './SectionHero.css'
+import ColorButton from '../ColorButton/ColorButton'
 
-const SectionHero = ({src,alt,text}) => {
+
+const SectionHero = ({text}) => {
   return (
     <>
     <div className = 'hero-section-container'>
@@ -11,6 +13,7 @@ const SectionHero = ({src,alt,text}) => {
             <h3 className= 'hero-section-title'>
             {text}
             </h3>
+            <ColorButton text='ABOUT ME' link= '/#AboutMe' />
         </div>
 
     
