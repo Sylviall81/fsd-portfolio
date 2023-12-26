@@ -1,5 +1,5 @@
 .hero-section-container{
-    margin: 7em 12.5em;
+    margin: 3.5em 12.5em;
     position: relative;
     background-image: url('https://res.cloudinary.com/dsesprxhl/image/upload/v1702062089/portfolio/pexels-picjumbocom-196655_jsplwv.jpg');
     width: 77%;
@@ -12,7 +12,7 @@
 }
 
 .hero-section-text-container{
-    background-color: #ffff;
+    background-color: #fafafa;
     height: 26em;
     width: 35em;
     font-family: var(--title-font);
@@ -25,5 +25,6 @@
 .hero-section-title{
     margin-top: 0;
     font-size: 3.5em;
+    font-weight: 700;
     
 }

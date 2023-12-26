@@ -11,7 +11,6 @@ function Header() {
       <header className = "header">
 
         <Link to='/' >
-
         <div className="header-logo-container">
           <img className ="header-img-logo"
             src= 'https://res.cloudinary.com/dsesprxhl/image/upload/v1703623360/portfolio/Captura_de_Pantalla_2023-12-26_a_la_s_9.41.20_p._m._rfq9ba.jpg'

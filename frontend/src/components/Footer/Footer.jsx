@@ -16,13 +16,16 @@ function Footer() {
             <div className="footer-logo-container">
               <img
                 className="footer-img-logo"
-                src="https://res.cloudinary.com/dsesprxhl/image/upload/v1702404502/portfolio/Handdrawn%20Circle%20Logo/2_ngmyne.png"
+                src='https://res.cloudinary.com/dsesprxhl/image/upload/v1703623360/portfolio/Captura_de_Pantalla_2023-12-26_a_la_s_9.41.20_p._m._rfq9ba.jpg'
                 alt=""
               />
             </div>
           </Link>
 
-          <Navbar textColor="#fafafa" />
+          <div className = 'footer-navlinks-container'>
+
+            <Navbar textColor="#203A4C" />
+          </div>
         </div>
 
         <div className = 'social-network-copyright-container' >
