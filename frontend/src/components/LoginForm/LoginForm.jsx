@@ -1,7 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import { Navigate} from 'react-router-dom';
 import './LoginForm.css'
 //import NeutralButton from '../ButtonNeutral/NeutralButton';
 import { AuthService } from '../../services/AuthService';
+
 
 function LoginForm() {
 
@@ -9,6 +11,10 @@ function LoginForm() {
     email: '',
     password: ''
   });
+
+  const [redirectToAdminPanel, setRedirectToAdminPanel] = useState(false);
+
+  
 
   const auth = AuthService();
 
@@ -32,12 +38,20 @@ function LoginForm() {
     
       localStorage.setItem('auth_token',res.data.token)//almacenar en local storage del navegador
       alert(res.data.msg);
+      if (res.data.token) {
+        // Configura el estado para redirigir
+        setRedirectToAdminPanel(true);
+      }
 
-      }).catch(error => console.log(error));
+     }).catch(error => console.log('Error de inicio de sesión:', error));
 
 
     console.log('Datos de login:', loginData);
   };
+
+  if (redirectToAdminPanel) {
+    return <Navigate to="/admin-panel" />;
+  }
 
 
   return (

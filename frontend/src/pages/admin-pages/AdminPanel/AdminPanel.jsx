@@ -5,6 +5,7 @@ import './AdminPanel.css'
 import { AuthService } from '../../../services/AuthService'
 
 function AdminPanel() {
+  
 
   const auth = AuthService();
 
@@ -14,7 +15,7 @@ function AdminPanel() {
       console.log(res);
       localStorage.removeItem('auth_token')
       alert(res.data.msg)
-    } ).catch(error => console.log(error))
+    }).catch(error => console.log(error))
 
   }
   return (
