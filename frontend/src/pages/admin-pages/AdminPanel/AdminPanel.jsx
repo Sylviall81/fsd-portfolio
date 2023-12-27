@@ -11,8 +11,9 @@ function AdminPanel() {
   const handleLogout = (e) => {
     e.preventDefault();
     auth.logout().then(res => {
-      console.log(res)
-      alert(res)
+      console.log(res);
+      localStorage.removeItem('auth_token')
+      alert(res.data.msg)
     } ).catch(error => console.log(error))
 
   }

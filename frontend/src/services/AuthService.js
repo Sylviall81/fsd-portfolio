@@ -8,9 +8,9 @@ axios.get('http://127.0.0.1:8000/sanctum/csrf-cookie',{withCredentials:true});
 
 axios.interceptors.request.use(function(config){
     const token = localStorage.getItem('auth_token');
-    config.headers.Authorization = token ? `Bearer ${token}`: '';
+    config.headers.Authorization = token ? `Bearer ${token}` : '';
     return config;
-})
+});
 
 export const AuthService = () => {
 
