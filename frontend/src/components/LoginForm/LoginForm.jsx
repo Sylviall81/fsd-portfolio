@@ -7,14 +7,16 @@ function LoginForm() {
     <>
       <div className = "login-form-container">
 
-      
             <form className = "login-form" action="POST">
                 <label className = "login-form-label" htmlFor="email">Email</label>
                 <input placeholder= "admin-user@example.com" type="email" name="email" id="" />
 
                 <label htmlFor="password">Password</label>
                 <input type="password" name="password" id="" />
+
+              
                 <NeutralButton type = "submit" text = "Login" link ="" />
+               
             {/* <button type="submit">Log In</button> */}
            
         </form>
