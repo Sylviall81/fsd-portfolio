@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import './LoginForm.css'
-import NeutralButton from '../ButtonNeutral/NeutralButton';
+//import NeutralButton from '../ButtonNeutral/NeutralButton';
 import { AuthService } from '../../services/AuthService';
 
 function LoginForm() {
