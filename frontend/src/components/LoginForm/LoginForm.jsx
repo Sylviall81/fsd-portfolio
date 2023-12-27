@@ -27,7 +27,13 @@ function LoginForm() {
     e.preventDefault();
     // Aquí puedes realizar alguna acción con los datos del formulario, como enviarlos a un servidor
     auth.login(loginData).then(res => {
-      console.log(res)}).catch(error => console.log(error));
+      console.log(res);
+      console.log(res.data.token);
+    
+      localStorage.setItem('auth_token',res.data.token)//almacenar en local storage del navegador
+      alert(res.data.msg);
+
+      }).catch(error => console.log(error));
 
 
     console.log('Datos de login:', loginData);
