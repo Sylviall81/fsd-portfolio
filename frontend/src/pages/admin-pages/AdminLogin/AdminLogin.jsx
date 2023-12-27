@@ -1,7 +1,7 @@
 import React from "react";
-import LoginForm from "../../components/LoginForm/LoginForm";
-import Layout from "../../components/Layout";
-import "../admin-pages/AdminLogin.css";
+import LoginForm from "../../../components/LoginForm/LoginForm";
+import Layout from "../../../components/Layout";
+import './AdminLogin.css'
 
 function AdminLogin() {
   return (

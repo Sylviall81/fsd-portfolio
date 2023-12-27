@@ -1,9 +1,12 @@
 import React from 'react'
-import RegisterForm from '../../components/RegisterForm/RegisterForm'
+import RegisterForm from '../../../components/RegisterForm/RegisterForm'
+import Layout from '../../../components/Layout'
+import './AdminPanel.css'
 
 function AdminPanel() {
   return (
-    <div>
+    <>
+    <Layout>
 
         <h1>
         AdminPanel
@@ -15,9 +18,9 @@ function AdminPanel() {
         </div>
 
 
-        
+        </Layout>
 
-        </div>
+        </>
   )
 }
 
