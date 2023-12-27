@@ -1,41 +1,76 @@
-// import React from 'react'
+import React, {useState} from 'react'
+import ColorButton from '../ColorButton/ColorButton';
+import './ContactForm.css';
 
-// function ContactForm() {
-//   return (
-//     <>
+const ContactForm = () =>{
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+      });
 
-//         <div className="formulario">
-//                 <h2 class="titulo-form">Contact Me</h2>
-//                 <p class="texto-form">Déjanos tus comentarios y en breve te contactaremos</p>
-//                     <form action=''>
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+          ...formData,
+          [name]: value
+        });
+      };
+    
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        // Aquí puedes realizar alguna acción con los datos del formulario, como enviarlos a un servidor
+        console.log('Datos del formulario:', formData);
+      };
+    
 
-//                         <label for="nombre">Nombre y apellidos:</label>
-//                         <input type="text" id="nombre" name="nombre" required maxlength="30" minlength="2">
+  return (
+    <>
+    <div className = "contact-form-container">
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Jane Appleseed"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
 
-//                         <label for="telefono">Teléfono:</label>
-//                         <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{4}-[0-9]{9}"
-//                                required placeholder="xxxx-xxxxxxxxx"></span>
-                
-//                         <label for="correo">E-mail:</label>
-//                         <input type="email" id="correo" name="correo" required>
+        <label htmlFor="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@example.com"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
 
-//                         <label for="asunto">Asunto:</label>
-//                         <input type="text" id="asunto" name="asunto" required minlength="2">
+        <label htmlFor="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="How can I help?"
+          rows="4"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        ></textarea>
 
-//                         <label for="comentarios">Comentarios:</label>
-//                         <textarea id="comentarios" name="comentarios" required></textarea>
+        <ColorButton type="submit" text="MESSAGE ME"/>
 
-//                         <div id="button-box">
-//                             <button class="main_button" type="submit"> Enviar </button>
-//                         </div>
-//                 </div>
-//                 </form>
+      </form>
+    </div>
+
+
+
+    </>
         
-        
-        
-        
-//     </>
-//   )
-// }
+  )
+}
 
-// export default ContactForm
+export default ContactForm
