@@ -1,15 +1,18 @@
 
 .admin-login-page-container{
         width: 99.9%;
-        border: solid lightgray 1px;
+        border: solid lightgray 0.5px;
         margin-top: 2.5em;
         display:flex;
         flex-direction: row;
 }
 
 .background-image-container-left{
-        background-color:#203a4c;
+        /* background-color:#203a4c; */
         width: 65%;
+        background-image: url(https://res.cloudinary.com/dsesprxhl/image/upload/v1702062088/portfolio/pexels-life-of-pix-7974_xpvena.jpg);
+        background-size: 100%;
+        object-fit: cover;
 }
 
 
@@ -17,7 +20,7 @@
         display: flex;     
         margin-top: 5em;
         flex-direction: column;
-        border: solid black 1px;
+        /* border: solid black 1px; */
         width: 45%;
         align-items: center;
 }
@@ -31,8 +34,8 @@
 }
 
 .login-form-container-box{
-        margin-left: 18%;
-        margin-bottom: 10%;
+        margin: 3% 6% 22%;
+
 }
 
 

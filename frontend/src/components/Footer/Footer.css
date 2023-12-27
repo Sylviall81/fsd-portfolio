@@ -1,6 +1,6 @@
 .footer-container {
 
-    border-top: solid 0.5px #203A4C;
+    border-top: solid 0.5px lightgray;
     display: flex;
     align-items: center;
     height: 8em;
