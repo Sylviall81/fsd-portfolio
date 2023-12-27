@@ -9,12 +9,12 @@ export default function Portfolio() {
       <Layout>
         <h1>Portfolio</h1>
 
-        <div>
+        <div className = 'portfolio-page-container'>
 
 
-        {/* <SectionImage src={project.url} title ={project.title} text = {project.description} /> */}
+          {/* <SectionImage src={project.url} title ={project.title} text = {project.description} /> */}
 
-        <NeutralButton text="VIEW PROJECT" link="" />
+          <NeutralButton text="VIEW PROJECT"  />
 
         </div>
 
