@@ -1,9 +1,33 @@
-.login-form-container{
+/* .login-form-container{
     display:flex;
     flex-direction: column;
     justify-content: center;
     border: black solid 0.1em;
-    height: 12rem;
-    width: 16rem;
-    border-radius: 10%;
+    height: 100%;
+    width: 90%;
+    margin-left:0;
+} */
+
+.login-form{
+    border: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.login-form-title{
+    font-family: var(--title-font);
+    font-size: 3em;
+    color:var(--accent-color);
+}
+
+.login-form-label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.text-content{
+    font-size: 1.3em;
 }

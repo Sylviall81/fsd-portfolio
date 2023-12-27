@@ -1,4 +1,5 @@
 import React from 'react'
+import RegisterForm from '../../components/RegisterForm/RegisterForm'
 
 function AdminPanel() {
   return (
@@ -7,6 +8,11 @@ function AdminPanel() {
         <h1>
         AdminPanel
         </h1>
+
+
+        <div className="register-form-container">
+          <RegisterForm />
+        </div>
 
 
         

@@ -1,13 +1,39 @@
-/* 
-.login-form-container-left{
 
+.admin-login-page-container{
+        width: 99.9%;
+        border: solid lightgray 1px;
+        margin-top: 2.5em;
+        display:flex;
+        flex-direction: row;
 }
 
-.register-form-container{
-
+.background-image-container-left{
+        background-color:#203a4c;
+        width: 65%;
 }
 
-.background-image-container-right{
 
+.login-form-container-right{   
+        display: flex;     
+        margin-top: 5em;
+        flex-direction: column;
+        border: solid black 1px;
+        width: 50%;
+        align-items: center;
 }
-        */
+
+.login-form-title{
+        margin:0;
+}
+
+.text-content{
+        width: 65%;
+}
+
+.login-form-container-box{
+        margin-left: 18%;
+        margin-bottom: 10%;
+}
+
+
+      

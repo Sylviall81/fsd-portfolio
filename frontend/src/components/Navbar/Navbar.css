@@ -19,13 +19,13 @@
 }
 
 .navlink:hover{
-    color: #5FB4A2;
+    color: var(--accent-color);
 }
 
 .active{
 
   font-weight: bold;
-  color: #5FB4A2;
+  color: var(--accent-color);
   justify-content: space-between;
 
 }

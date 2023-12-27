@@ -1,25 +1,31 @@
 import React from "react";
 import LoginForm from "../../components/LoginForm/LoginForm";
-import RegisterForm from "../../components/RegisterForm/RegisterForm";
 import Layout from "../../components/Layout";
+import "../admin-pages/AdminLogin.css";
 
 function AdminLogin() {
   return (
-    <div>
+    <>
       <Layout>
-        <h1>AdminLogin </h1>
+        <div className = "admin-login-page-container">
 
-        <div className="login-form-container-left">
+          <div className="background-image-container-left"></div>
+
+          <div className="login-form-container-right">
+
+          <h4 className = 'login-form-title'>Welcome</h4>
+          <p className= "text-content" >Please, submit your email and password to access your admin panel.</p>
+
+          <div className = "login-form-container-box">
           <LoginForm />
+          </div>
         </div>
 
-        <div className="register-form-container">
-          <RegisterForm />
         </div>
 
-        <div className="background-image-container-right"></div>
+        
       </Layout>
-    </div>
+    </>
   );
 }
 

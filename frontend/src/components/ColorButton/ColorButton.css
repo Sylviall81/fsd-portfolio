@@ -24,7 +24,7 @@
 }
 
 .color-button:hover {
-    background-color: #5FB4A2;
+    background-color: var(--accent-color);
     color: var(--bg-color);
     cursor: pointer;
 }
