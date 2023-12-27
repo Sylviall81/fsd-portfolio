@@ -38,9 +38,11 @@ class AuthController extends Controller
 
     }
 
-    // public function login (){
+    public function login (){
 
-    // }
+        
+
+    }
 
     // public function update(){
         
