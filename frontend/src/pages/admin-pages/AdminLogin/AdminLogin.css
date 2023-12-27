@@ -11,8 +11,10 @@
         /* background-color:#203a4c; */
         width: 65%;
         background-image: url(https://res.cloudinary.com/dsesprxhl/image/upload/v1702062088/portfolio/pexels-life-of-pix-7974_xpvena.jpg);
-        background-size: 100%;
         object-fit: cover;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        
 }
 
 

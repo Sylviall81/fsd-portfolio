@@ -10,6 +10,7 @@ const ContactForm = () =>{
       });
 
       const handleChange = (e) => {
+        e.persist();
         const { name, value } = e.target;
         setFormData({
           ...formData,

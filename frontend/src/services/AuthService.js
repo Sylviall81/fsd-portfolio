@@ -7,13 +7,27 @@ axios.defaults.headers.post['Accept'] = "application/json";
 export const AuthService = () => {
 
     const urnSignin = 'api/register';
+    const urnLogin = 'api/login';
+    //const urnLogout = 'api/logout';
 
     const register = ($data) => {
         const res= axios.post(urnSignin, $data)
         return res;
     }
 
+    const login = ($data) => {
+        const res= axios.post(urnLogin, $data)
+        return res;
+    }
+
+    // const logout = ($data) => {
+    //     // const res= axios.post(urnLogout, $data)
+    //     // return res;
+    // }
+
     return {
-        register
+        register,
+        login
+        // logout
     }
 }
