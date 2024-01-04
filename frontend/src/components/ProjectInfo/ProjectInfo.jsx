@@ -18,7 +18,7 @@ function ProjectInfo({project}) {
         <div className='project-detail-title-container'>
             <h3>{project.title}</h3>
             <p>{project.short_description}</p>
-            <h5>tecnologias</h5>
+            <h4>tecnologias</h4>
 
             <div className='github-round'>
             <SocialNetworkIcon
@@ -34,12 +34,12 @@ function ProjectInfo({project}) {
         </div>
 
         <div className='project-detail-text-container'>
-        <h4>Project Background</h4>
+        <h3>Project Background</h3>
         <p>{project.project_background}</p>
-        <h4>Static Previews</h4>
-        <img alt="" src={project.static_preview_1}/>
-        <img alt="" src={project.static_preview_2}/>
-        <img alt="" src={project.static_preview_3}/>
+        <h3>Static Previews</h3>
+        <img className='static-preview' alt="" src={project.static_preview_1}/>
+        <img className='static-preview' alt="" src={project.static_preview_2}/>
+        <img className='static-preview' alt="" src={project.static_preview_3}/>
 
         </div>
 
