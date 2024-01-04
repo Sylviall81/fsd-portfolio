@@ -25,22 +25,24 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/login',[AuthController::class, 'login']); //Login
 
+Route::get('/projects',[ProjectController::class, 'index']); //index (ver todos los projectos)
+//Route::get('/project-detail',[ProjectController::class, 'show']);
+
+
+
+
+
 //Rutas protegidas
 Route::group(['middleware' =>['auth:sanctum']],function(){
 
     Route::post('/logout',[AuthController::class, 'logout']); 
     Route::post('/register',[AuthController::class, 'register']);
-    //Route::post('/new-project',[ProjectController::class, 'store']);
+    //Route::post('/add-project',[ProjectController::class, 'store']);
     
 });
 
 
-//Rutas Project
 
-//Index GetAllProjects
-// //index (ver todos los proyectos)
-Route::get('/projects',[ProjectController::class, 'index']); //index (ver todos los projectos)
-//Route::get('/project-detail',[ProjectController::class, 'show']);
 
 
 //Route::put('/update/id',[AuthController::class, 'update']); //update user
