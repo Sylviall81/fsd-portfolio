@@ -1,24 +1,40 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import Layout from "../components/Layout";
-import NeutralButton from "../components/ButtonNeutral/NeutralButton";
+import { ProjectService } from "../services/ProjectService";
+//import SectionImage from "../components/SectionImage/SectionImage";
+import SectionCTA from "../components/SectionCTA/SectionCTA";
+import Project from "../components/Project/Project";
+
 //import SectionImage from "../components/SectionImage/SectionImage";
 
-export default function Portfolio() {
+export default function Portfolio(){
+  const [projects, setProjects] = useState([]);
+  const api = ProjectService();
+
+  useEffect(() =>{
+    api.getAll().then(res => {
+      console.log(res)
+      setProjects(res.data);
+     }).catch(error => console.log(error))
+  },[])
+    
+
+     console.log('projects',projects)
+  
   return (
-    <div>
+    <>
       <Layout>
-        <h1>Portfolio</h1>
-
+      
         <div className = 'portfolio-page-container'>
-
-
-          {/* <SectionImage src={project.url} title ={project.title} text = {project.description} /> */}
-
-          <NeutralButton text="VIEW PROJECT"  />
-
+      
+        {projects.map ((project,index) =>(
+          <Project key={index} project = {project}/>        
+))
+}
+        <SectionCTA title="Interested in doing a project together?" />
+        
         </div>
-
       </Layout>
-    </div>
+    </>
   );
 }

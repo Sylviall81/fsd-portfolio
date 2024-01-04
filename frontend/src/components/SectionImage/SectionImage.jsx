@@ -2,7 +2,7 @@ import React from 'react'
 import NeutralButton from '../ButtonNeutral/NeutralButton'
 import './SectionImage.css'
 
-const SectionImage = ({src,title,text}) => {
+const SectionImage = ({src,title,text,button_text,button_link}) => {
   return (
     <>
 
@@ -18,7 +18,7 @@ const SectionImage = ({src,title,text}) => {
         <p className= "text-content">{text}</p>
 
         <div className = 'button-container'>
-        <NeutralButton text='GO TO PORTFOLIO' link= "/portfolio" />
+        <NeutralButton text={button_text} link= {button_link} />
         </div>
 
         </div>

@@ -5,6 +5,7 @@ import Portfolio from '../pages/Portfolio';
 import ContactMe from '../pages/ContactMe';
 import AdminPanel from '../pages/admin-pages/AdminPanel/AdminPanel';
 
+
 //import App from '../App';
 
 
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
     { path: '/contact-me',
     element: <ContactMe/>
     }
+    
 ])
 
 export default router;
