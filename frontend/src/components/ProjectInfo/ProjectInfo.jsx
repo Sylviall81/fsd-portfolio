@@ -10,8 +10,10 @@ function ProjectInfo({project}) {
     <div className='project-info-full-container'>
 
         <div className='hero-image-comtainer'>
-        <img src = {project.hero_img_url} alt = "main view of the project"></img>
+        <img className='hero-image' src = {project.hero_img_url} alt = "main view of the project"></img>
         </div>
+
+        <div className='bottom-container'>
 
         <div className='project-detail-title-container'>
             <h3>{project.title}</h3>
@@ -38,6 +40,8 @@ function ProjectInfo({project}) {
         <img alt="" src={project.static_preview_1}/>
         <img alt="" src={project.static_preview_2}/>
         <img alt="" src={project.static_preview_3}/>
+
+        </div>
 
         </div>
 

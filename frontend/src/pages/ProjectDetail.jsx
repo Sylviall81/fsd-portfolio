@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { ProjectService } from '../services/ProjectService';
 import ProjectInfo from '../components/ProjectInfo/ProjectInfo';
+import Layout from '../components/Layout';
 
 
 
@@ -27,9 +28,11 @@ function ProjectDetail() {
 
   return (
     <>
-    ProjectDetail
+    <Layout>
 
     <ProjectInfo project={project} />
+
+    </Layout>
     </>
   )
 }

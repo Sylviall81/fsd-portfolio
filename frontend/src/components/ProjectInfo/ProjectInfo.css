@@ -1,6 +1,26 @@
+.project-info-full-container{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.hero-image{
+    width: 77%;
+    height: 45em;
+    margin: 3.5em 12.5em;
+
+    
+}
 .github-round{
     background-color: var(--accent-color);
     width: 2.3em;
     height: 2.3em;
     border-radius: 50%;
+}
+
+.bottom-container{
+    display:flex;
+    flex-direction: row;
+
 }
