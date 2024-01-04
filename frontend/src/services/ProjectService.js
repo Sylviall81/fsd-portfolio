@@ -3,13 +3,18 @@ import axios from 'axios';
 export const ProjectService = () => {
 
     const urnProjects = 'api/projects';
-    // const urnLogin = 'api/login';
+    
     // const urnLogout = 'api/logout';
 
     const getAll = () => {
         const res = axios.get(urnProjects)
         return res;
     }
+
+    const getById = async (id) => {
+        const response = axios.get(`${urnProjects}/${id}`);
+        return response;
+      };
 
     // const login = ($data) => {
     //     const res= axios.post(urnLogin, $data)
@@ -22,6 +27,7 @@ export const ProjectService = () => {
     // }
 
     return {
-        getAll
+        getAll,
+        getById
     }
 }

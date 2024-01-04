@@ -13,12 +13,6 @@ const SocialNetworkIcon = ({ src, url }) =>  {
    </a>
    
    </div>
-
-
-
-   
-   
-   
    
    </>
   )

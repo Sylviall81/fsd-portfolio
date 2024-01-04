@@ -1,7 +1,6 @@
 import React,{useState, useEffect} from "react";
 import Layout from "../components/Layout";
 import { ProjectService } from "../services/ProjectService";
-//import SectionImage from "../components/SectionImage/SectionImage";
 import SectionCTA from "../components/SectionCTA/SectionCTA";
 import Project from "../components/Project/Project";
 

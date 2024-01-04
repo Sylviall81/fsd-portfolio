@@ -4,6 +4,7 @@ import AdminLogin from '../pages/admin-pages/AdminLogin/AdminLogin';
 import Portfolio from '../pages/Portfolio';
 import ContactMe from '../pages/ContactMe';
 import AdminPanel from '../pages/admin-pages/AdminPanel/AdminPanel';
+import ProjectDetail from '../pages/ProjectDetail';
 
 
 //import App from '../App';
@@ -23,9 +24,14 @@ const router = createBrowserRouter([
     { path: '/portfolio',
     element: <Portfolio/>
     },
+    { path: '/project-detail/:id',
+    element: <ProjectDetail/>
+    },
+    
     { path: '/contact-me',
     element: <ContactMe/>
     }
+    
     
 ])
 
