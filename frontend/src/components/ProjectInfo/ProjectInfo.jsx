@@ -9,24 +9,22 @@ function ProjectInfo({project}) {
     <>
     <div className='project-info-full-container'>
 
-        <div className='hero-image-comtainer'>
-        <img className='hero-image' src = {project.hero_img_url} alt = "main view of the project"></img>
+        <div className='hero-image-container'>
+          <img className='project-info-hero-image' src = {project.hero_img_url} alt = "main view of the project"></img>
         </div>
 
         <div className='bottom-container'>
 
-        <div className='project-detail-title-container'>
-            <h3>{project.title}</h3>
-            <p>{project.short_description}</p>
-            <h4>tecnologias</h4>
+          <div className='project-detail-title-container'>
+              <h3>{project.title}</h3>
+              <p>{project.short_description}</p>
+              <h4>tecnologias</h4>
 
-            <div className='github-round'>
-            <SocialNetworkIcon
-            src={GithubIcon}
-            url={project.project_repo}
-          /></div>
-
-
+              <div className='github-round'>
+                <SocialNetworkIcon
+                src={GithubIcon}
+                url={project.project_repo}/>
+              </div>
 
             <NeutralButton text="VISIT WEBSITE" link={project.project_link}/>
             
