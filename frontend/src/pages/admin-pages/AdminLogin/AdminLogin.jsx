@@ -14,7 +14,7 @@ function AdminLogin() {
           <div className="login-form-container-right">
 
           <h4 className = 'login-form-title'>Welcome</h4>
-          <p className= "text-content" >Please, submit your email and password to access your admin panel.</p>
+          <p className= "admin-login-text-content" >Please, submit your email and password to access your admin panel.</p>
 
           <div className = "login-form-container-box">
           <LoginForm />

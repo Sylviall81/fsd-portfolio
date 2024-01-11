@@ -13,20 +13,23 @@
     width: 45%;
 }
 
-.text{
+.section-text-content{
     width: 70%;
     font-size: 1.3em;
     line-height: 1.7em;
     margin-bottom: 2em;
+    color: var(--button-hover-color);
 }
 
 .social-network-capsule{
-    margin-top: 0.2em;
+    padding-top: 0.3em;
+    margin-top: 0.5em;
     height: 2.5em;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #203A4C;
     width: 18%;
+    height: 2em;
     border-radius:30px;
 }

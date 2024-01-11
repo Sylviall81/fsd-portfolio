@@ -13,7 +13,7 @@ const SectionImage = ({src,title,text,button_text,button_link}) => {
       </div>
 
       <div className = 'text-container'>
-        <h3 className = "section-title">{title}</h3>
+        <h3 className = "section-image-section-title">{title}</h3>
 
         <p className= "text-content">{text}</p>
 
