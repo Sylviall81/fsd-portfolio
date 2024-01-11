@@ -45,8 +45,9 @@ function ProjectCarrousel({project, allProjects}) {
                 <path fill="none" stroke="#33323D" d="M9 0L1 8l8 8"/>
               </svg>
               <div className='slider-previous-button-text'>
-                <h2>''</h2>
+                <h2>{project.title}</h2>
                 <p>Previous project</p>
+                
               </div>
             </button>
         
@@ -59,7 +60,7 @@ function ProjectCarrousel({project, allProjects}) {
                 <path fill="none" stroke="#33323D" d="M1 0l8 8-8 8"/>
               </svg>
               <div className="slider-next-button-text">
-                <h2>''</h2>
+                <h2>{project.title}</h2>
                 <p>Next project</p>
               </div>
             </button>

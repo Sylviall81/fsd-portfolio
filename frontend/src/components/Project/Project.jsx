@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionImage from '../SectionImage/SectionImage'
 
+
 function Project({project}) {
   return (
     <>

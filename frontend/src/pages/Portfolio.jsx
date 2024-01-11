@@ -6,16 +6,20 @@ import Project from "../components/Project/Project";
 
 //import SectionImage from "../components/SectionImage/SectionImage";
 
+
+
 export default function Portfolio(){
   const [projects, setProjects] = useState([]);
+
   const api = ProjectService();
+  
 
   useEffect(() =>{
     api.getAll().then(res => {
       console.log(res)
       setProjects(res.data);
      }).catch(error => console.log(error))
-  },[])
+  },[api])
     
 
      console.log('projects',projects)
@@ -29,10 +33,9 @@ export default function Portfolio(){
         {projects.map ((project,index) =>(
           <Project key={index} project = {project}/>        
 ))
-}
-        <SectionCTA title="Interested in doing a project together?" />
-        
+}        
         </div>
+        <SectionCTA title="Interested in doing a project together?" button_text = "CONTACT ME" button_link = "/contact-me" />
       </Layout>
     </>
   );

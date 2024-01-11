@@ -5,12 +5,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 77%;
+    width: 69.56em;
 }
 
 
 .cta-section-text-container{
-    font-size: 2.5em; 
+    font-size: 2.18em; 
+    line-height: 42px;
     font-family: var(--title-font);
     width: 35%;
 
