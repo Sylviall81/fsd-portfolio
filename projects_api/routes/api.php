@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\ContactMessageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,8 +26,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/login',[AuthController::class, 'login']); //Login
 
+//proyectos del portfolio
 Route::get('/projects',[ProjectController::class, 'index']); //index (ver todos los projectos)
-Route::get('/projects/{id}',[ProjectController::class, 'show']);
+Route::get('/projects/{id}',[ProjectController::class, 'show']);//ver detalle de proyecto
+
+
+//mensajes de contacto
+Route::post('/contact-me',[ContactMessageController::class, 'store']);//guardar mensaje de contacto
 
 
 
