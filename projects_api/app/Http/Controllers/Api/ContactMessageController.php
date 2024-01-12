@@ -25,7 +25,7 @@ class ContactMessageController extends Controller
 
         $contactMessage = ContactMessage::create($validatedData);
 
-        $contactMessage->notify(new ContactMessageNotification($contactMessage));
+        // $contactMessage->notify(new ContactMessageNotification($contactMessage));
       
 
 
