@@ -14,9 +14,10 @@ class ContactMessageNotification extends Notification
     /**
      * Create a new notification instance.
      */
-    public function __construct()
+    public function __construct($contactMessage)
     {
         //
+        $this->contactMessage = $contactMessage;
     }
 
     /**
@@ -35,14 +36,14 @@ class ContactMessageNotification extends Notification
     public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)
-                    ->line('Se ha recibido un nuevo mensaje de contacto:')
-                    ->line('Nombre: ' . $notifiable->name)
-                    ->line('Correo electrónico: ' . $notifiable->email)
-                    ->line('Teléfono: ' . $notifiable->phone)
-                    ->line('Mensaje: ' . $notifiable->message);
-                    /*->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');*/
+            ->subject('Nuevo mensaje de contacto')
+            ->line('Un nuevo mensaje de contacto ha sido recibido.')
+            ->line('Nombre: ' . $this->contactMessage->name)
+            ->line('Correo Electrónico: ' . $this->contactMessage->email)
+            ->line('Teléfono: ' . $this->contactMessage->phone)
+            ->line('Mensaje: ' . $this->contactMessage->message);
     }
+    
 
     /**
      * Get the array representation of the notification.

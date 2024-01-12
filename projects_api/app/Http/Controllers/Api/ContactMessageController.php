@@ -26,6 +26,7 @@ class ContactMessageController extends Controller
         $contactMessage = ContactMessage::create($validatedData);
 
         $contactMessage->notify(new ContactMessageNotification($contactMessage));
+      
 
 
         return response()->json(['message' => 'Mensaje de contacto almacenado con éxito', 'data' => $contactMessage], 201);
