@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const ContactDataService = () => {
 
-     const urnContactForm = 'api/contact';
+     const urnContactForm = 'api/contact-me';
     // const urnLogin = 'api/login';
     // const urnLogout = 'api/logout';
 

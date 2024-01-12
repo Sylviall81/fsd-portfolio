@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ColorButton from "../ColorButton/ColorButton";
 import "./ContactForm.css";
+import { ContactDataService } from "../../services/ContactMessageService";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -18,12 +19,21 @@ const ContactForm = () => {
       [name]: value,
     });
   };
+ 
+  console.log('Datos del formulario:', formData); 
+  //--> prueba si funciona el handleOnchange
 
+  const  api = ContactDataService();
   const handleSubmit = (e) => {
     e.preventDefault();
     // Aquí puedes realizar alguna acción con los datos del formulario, como enviarlos a un servidor
-    console.log("Datos del formulario:", formData);
+    api.storeContactData(formData).then(res => {
+      console.log(res)}).catch(error => console.log(error));
+
+
+    console.log('Datos del formulario:', formData);
   };
+
 
   return (
     <>
@@ -80,7 +90,10 @@ const ContactForm = () => {
             required
           ></textarea>
 
+          <button type="submit">Enviar</button>
+
           <ColorButton type="submit" text="MESSAGE ME" />
+
         </form>
       </div>
     </>
