@@ -90,9 +90,11 @@ const ContactForm = () => {
             required
           ></textarea>
 
-          <button type="submit">Enviar</button>
+          <button type="submit">ENVIAR</button>
 
-          <ColorButton type="submit" text="MESSAGE ME" />
+          <ColorButton text="MESSAGE ME" />
+
+          
 
         </form>
       </div>
