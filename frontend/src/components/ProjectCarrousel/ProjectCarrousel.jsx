@@ -1,14 +1,18 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import "./ProjectCarrousel.css";
-import { useParams } from 'react-router-dom';
+import { useParams,useNavigate } from 'react-router-dom';
 
 
 
-function ProjectCarrousel({project}) {
-  const id = useParams
-  const [currentId, setCurrentId] = useState(id);
-  const [index, setIndex]= useState(0);
-  console.log("currentID",currentId);
+
+function ProjectCarrousel({project,allProjects}) {
+  const [currentId, setCurrentId] = useState(useParams().id);
+  const navigate = useNavigate();
+
+  console.log({project})
+  //const id = useParams
+  // const [projectsArray, setProjectsArray]= useState([]);
+  
 
 
   // const handleClickNext = ({currentId}) =>{
@@ -21,6 +25,33 @@ function ProjectCarrousel({project}) {
   //   }
 
   // }
+
+ 
+
+  const handleClickNext = () => {
+    if (currentId < allProjects.length - 1) {
+      const nextId = parseInt(currentId)+1;
+      setCurrentId(nextId); // Update state once
+      console.log(nextId)
+      navigate(`/project-detail/${nextId}`)
+
+    }
+  };
+
+  const handleClickPrevious = () => {
+    if (currentId < allProjects.length) {
+      const previousId = parseInt(currentId)-1;
+      setCurrentId(previousId); // Update state once
+      console.log(previousId)
+      navigate(`/project-detail/${previousId}`)
+
+    }
+  };
+
+
+
+
+
 
   // const handleClickPrevious = ({currentId}) =>{
     
@@ -39,7 +70,7 @@ function ProjectCarrousel({project}) {
     <div className="project-slider-full-container">
 
     <div className="previous-project-container">
-            <button className="slider-invisible-button" onClick = {() => setIndex (index-1)}>
+            <button className="slider-invisible-button" onClick = {handleClickPrevious}>
               <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16">
                 <path fill="none" stroke="#33323D" d="M9 0L1 8l8 8"/>
               </svg>
@@ -54,7 +85,7 @@ function ProjectCarrousel({project}) {
 
 
     <div className="next-project-container">
-            <button className="slider-invisible-button" onClick={() => setIndex (index+1)}>
+            <button className="slider-invisible-button" onClick={handleClickNext}>
               <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16">
                 <path fill="none" stroke="#33323D" d="M1 0l8 8-8 8"/>
               </svg>

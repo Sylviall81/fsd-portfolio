@@ -10,6 +10,7 @@ import ProjectCarrousel from '../components/ProjectCarrousel/ProjectCarrousel';
 function ProjectDetail() {
     const {id} = useParams();
     const [project, setProject] = useState({});
+    const [projectArray, setProjectArray] = useState([]);
 
     
    
@@ -30,13 +31,13 @@ function ProjectDetail() {
 
     console.log(project)
 
-    // useEffect(() =>{
-    //   const api = ProjectService();
-    //   api.getAll().then(res => {
-    //     console.log(res)
-    //     setProjectArray(res.data);
-    //    }).catch(error => console.log(error))
-    // },[])
+    useEffect(() =>{
+      
+      ProjectService.getAll().then(res => {
+        console.log(res)
+        setProjectArray(res.data);
+       }).catch(error => console.log(error))
+    },[])
 
 
 
@@ -47,7 +48,7 @@ function ProjectDetail() {
     <Layout>
 
          <ProjectInfo project={project} />
-        <ProjectCarrousel project={project} />
+        <ProjectCarrousel project={project} allProjects= {projectArray}/>
 
     </Layout>
     </>
