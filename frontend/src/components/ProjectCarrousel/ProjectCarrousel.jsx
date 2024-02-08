@@ -4,13 +4,11 @@ import { useParams } from 'react-router-dom';
 
 
 
-function ProjectCarrousel({project, allProjects}) {
+function ProjectCarrousel({project}) {
   const id = useParams
   const [currentId, setCurrentId] = useState(id);
-  const [projects, setProjects] = useState(allProjects);
   const [index, setIndex]= useState(0);
   console.log("currentID",currentId);
-  console.log(allProjects.length);
 
 
   // const handleClickNext = ({currentId}) =>{

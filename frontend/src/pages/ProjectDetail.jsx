@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { ProjectService } from '../services/ProjectService';
+import ProjectService  from '../services/ProjectService';
 import ProjectInfo from '../components/ProjectInfo/ProjectInfo';
 import Layout from '../components/Layout';
 import ProjectCarrousel from '../components/ProjectCarrousel/ProjectCarrousel';
@@ -10,7 +10,6 @@ import ProjectCarrousel from '../components/ProjectCarrousel/ProjectCarrousel';
 function ProjectDetail() {
     const {id} = useParams();
     const [project, setProject] = useState({});
-    const [projectArray, setProjectArray] = useState([]);
 
     
    
@@ -20,9 +19,7 @@ function ProjectDetail() {
   
 
     useEffect(() => {
-      const api = ProjectService();
-
-        api.getById(id)
+        ProjectService.getById(id)
             .then (response => {
                 setProject(response.data);
             })
@@ -33,13 +30,13 @@ function ProjectDetail() {
 
     console.log(project)
 
-    useEffect(() =>{
-      const api = ProjectService();
-      api.getAll().then(res => {
-        console.log(res)
-        setProjectArray(res.data);
-       }).catch(error => console.log(error))
-    },[])
+    // useEffect(() =>{
+    //   const api = ProjectService();
+    //   api.getAll().then(res => {
+    //     console.log(res)
+    //     setProjectArray(res.data);
+    //    }).catch(error => console.log(error))
+    // },[])
 
 
 
@@ -50,7 +47,7 @@ function ProjectDetail() {
     <Layout>
 
          <ProjectInfo project={project} />
-        <ProjectCarrousel project={project} allProjects={projectArray} />
+        <ProjectCarrousel project={project} />
 
     </Layout>
     </>
