@@ -9,6 +9,16 @@ use App\Notifications\ContactMessageNotification;
 
 class ContactMessageController extends Controller
 {
+
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        //
+        $messages = ContactMessage::all();
+        return response()->json($messages);
+    }
     /**
      * Store a newly created resource in storage.
      */
@@ -31,6 +41,8 @@ class ContactMessageController extends Controller
 
         return response()->json(['message' => 'Mensaje de contacto almacenado con éxito', 'data' => $contactMessage], 201);
     }
+
+    
 
 
 }

@@ -31,8 +31,14 @@ Route::get('/projects',[ProjectController::class, 'index']); //index (ver todos 
 Route::get('/projects/{id}',[ProjectController::class, 'show']);//ver detalle de proyecto
 
 
+
 //mensajes de contacto
 Route::post('/contact-me',[ContactMessageController::class, 'store']);//guardar mensaje de contacto
+
+/**ver los mesajes de contacto, iria luego en middleware (admin panel)**/
+Route::get('/messages',[ContactMessageController::class, 'index']);
+
+
 
 
 
