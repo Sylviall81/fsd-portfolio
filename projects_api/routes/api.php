@@ -30,6 +30,9 @@ Route::post('/login',[AuthController::class, 'login']); //Login
 Route::get('/projects',[ProjectController::class, 'index']); //index (ver todos los projectos)
 Route::get('/projects/{id}',[ProjectController::class, 'show']);//ver detalle de proyecto
 
+//primero sin auth ¿?
+Route::post('/admin-panel',[ProjectController::class, 'store']);//guardar mensaje de contacto
+
 
 
 //mensajes de contacto
@@ -60,7 +63,7 @@ Route::group(['middleware' =>['auth:sanctum']],function(){
 //Route::put('/update/id',[AuthController::class, 'update']); //update user
 //Route::get('/show-users-list',[AuthController::class, 'show-users-list']); //index (ver todos los users)
 //Route::get('/show-user-info/id',[AuthController::class, 'show-user-info']); //ver detalle de usuario
-//Route::delete('/show-user-info',[AuthController::class, 'show-user-info']); //ver detalle de usuario
+//Route::delete('/borrar-user-info',[AuthController::class, 'delete-user-info¿?']); //borrar info de usuario
 
 
 

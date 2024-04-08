@@ -24,6 +24,28 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         //
+        $validatedData = $request->validate([
+            'title' => 'required|string',
+            'short_description' => 'required|string',
+            'project_background' => 'nullable|string',
+            'project_link' => 'nullable|url',
+            'project_repo' => 'required|url',
+            'cover_img_url' => 'required|url',
+            'hero_img_url' => 'required|url',
+            'static_preview_1' => 'nullable|string',
+            'static_preview_2' => 'nullable|string',
+            'static_preview_3' => 'nullable|string'
+
+        ]);
+
+        $project = Project::create($validatedData);
+
+        // $contactMessage->notify(new ContactMessageNotification($contactMessage));
+      
+
+
+        return response()->json(['message' => 'Proyecto almacenado con éxito', 'data' => $project], 201);
+
     }
 
     /**
