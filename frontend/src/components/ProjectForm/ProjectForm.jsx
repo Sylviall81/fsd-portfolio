@@ -69,6 +69,7 @@ const ProjectForm = () => {
             rows="4"
             placeholder="Set a short description of the project"
             value={formData.short_description}
+            required
             onChange={handleChange}
           />
 
@@ -106,21 +107,63 @@ const ProjectForm = () => {
             name="project_repo"
             placeholder="Insert the URL for the GitHub repository"
             value={formData.project_repo}
+            required
             onChange={handleChange}
           />
 
-          <label className="contact-form-label" htmlFor="message">
-            Message
+          <label className="contact-form-label" htmlFor="cover_image_url">
+            Cover Image
           </label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="How can I help?"
-            rows="4"
-            value={formData.message}
+          <input
+            type="url"
+            id="cover_image_url"
+            name="cover_image_url"
+            placeholder="Insert the URL for a cover image of the project"
+            value={formData.cover_image_url}
             onChange={handleChange}
-            required
-          ></textarea>
+          />
+
+          <label className="contact-form-label" htmlFor="hero_image_url">
+            Hero Image
+          </label>
+          <input
+            type="url"
+            id="hero_image_url"
+            name="hero_image_url"
+            placeholder="Insert the URL for the main image of the project"
+            value={formData.hero_img_url}
+            onChange={handleChange}
+          />
+
+          <label className="contact-form-label" htmlFor="static_preview_1">
+            Aditional Static Images
+          </label>
+          <input
+            type="url"
+            id="static_preview_1"
+            name="static_preview_1"
+            placeholder="Insert additional images of the project"
+            value={formData.static_preview_1}
+            onChange={handleChange}
+          />
+
+          <input
+            type="url"
+            id="static_preview_2"
+            name="static_preview_2"
+            placeholder="Insert additional images of the project"
+            value={formData.static_preview_2}
+            onChange={handleChange}
+          />
+
+          <input
+            type="url"
+            id="static_preview_3"
+            name="static_preview_3"
+            placeholder="Insert additional images of the project"
+            value={formData.static_preview_3}
+            onChange={handleChange}
+          />
 
           <button type="submit">ENVIAR</button>
 
