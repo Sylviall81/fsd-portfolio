@@ -2,14 +2,14 @@
 
     border-top: solid 0.5px lightgray;
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     height: 8em;
     justify-content: space-between;
     /* position: fixed; */
     bottom: 0;
     left: 0;
     width: 100%;
-    text-align: center;
+    
     padding: 10px;
 
 }
@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 10%;
+    /*margin-left: 10%;*/
     color:#203A4C;
 
 }
