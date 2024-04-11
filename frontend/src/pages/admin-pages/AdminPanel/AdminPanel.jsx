@@ -12,19 +12,24 @@ function AdminPanel() {
   const auth = AuthService();
 
   
-
-  /*const handleLogout = (e) => {
+  const handleLogout = (e) => {
     e.preventDefault();
-    auth.logout().then(res => {
+    auth.logout()
+      .then(res => {
       console.log(res);
       localStorage.removeItem('auth_token')
       alert(res.data.msg)
-    }).catch(error => console.log(error))
+    })
+    .catch(error => {
+        // Capturar errores en la solicitud de logout
+        console.error("Error al realizar la solicitud de logout:", error);
+        alert("Error al realizar la solicitud de logout. Por favor, inténtalo de nuevo más tarde.");
+      });
 
-  }*/
+  }
 
 
-  const handleLogout = (e) => {
+  /*const handleLogout = (e) => {
     e.preventDefault();
     auth.logout()
       .then(res => {
@@ -44,7 +49,7 @@ function AdminPanel() {
         console.error("Error al realizar la solicitud de logout:", error);
         alert("Error al realizar la solicitud de logout. Por favor, inténtalo de nuevo más tarde.");
       });
-  };
+  }; */
   
 
 
@@ -60,22 +65,24 @@ function AdminPanel() {
         AdminPanel
            <button onClick={handleLogout} >LogOut</button>
         </h1>
+        <h3>Bienvenid@ a tu panel de administrador</h3>
 
-        <h3>Bienvenid@ </h3>
+        <div className = "sections-wrapper">
+
+            <div className="new-project-form">
+        
+              <h3>Ingresa los datos de un nuevo proyecto:</h3>
+                <ProjectForm />
+        
+            </div>
 
       
-        <div className="register-form-container">
-          <RegisterForm />
-        </div>
-        <div>
-        <h3>Ingresa los datos de un nuevo proyecto:</h3>
-        <ProjectForm />
-        
+            <div className="register-form-container">
+              <h3> Ingresa un nuevo usuario administrador</h3>
+              <RegisterForm />
+            </div>
 
-
-        </div>
-
-
+        </div> {/*cierre de section wrapper*/}
         </Layout>
 
         </>

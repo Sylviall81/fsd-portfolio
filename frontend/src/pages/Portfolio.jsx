@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import ProjectService from "../services/ProjectService";
 import SectionCTA from "../components/SectionCTA/SectionCTA";
 import Project from "../components/Project/Project";
-import './Portfoliocss.css'
 
 //import SectionImage from "../components/SectionImage/SectionImage";
 
