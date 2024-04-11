@@ -2,14 +2,13 @@
 
     border-top: solid 0.5px lightgray;
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
     height: 8em;
     justify-content: space-between;
     /* position: fixed; */
     bottom: 0;
     left: 0;
     width: 100%;
-    
     padding: 10px;
 
 }
@@ -20,7 +19,7 @@
     height: 7.5em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     /*margin-left: 10%;*/
     color:#203A4C;
 
@@ -43,8 +42,8 @@
 .footer-social-network-container {
     background-color: #203A4C;
     display: flex;
-    width: 40%;
-    height: 3em;
+    width: 36%;
+    height: 3.2em;
     align-items: center;
     margin-right: 20em;
     justify-content: space-around;
