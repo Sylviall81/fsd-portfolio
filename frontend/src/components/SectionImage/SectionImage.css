@@ -7,6 +7,10 @@
     /*margin-left: 9.3em;*/
 } 
 
+.image-section-container:nth-child(even){
+    flex-direction: row-reverse;
+} /* para el efecto de texto y foto derecha7izquierda subsecuente*/
+
 .aside-image-container{
     width: 33.75rem;
     height: 37.5rem;

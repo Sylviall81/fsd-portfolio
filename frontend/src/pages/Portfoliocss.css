@@ -1,0 +1,7 @@
+
+
+.single-project:nth-child(odd){
+
+    flex-direction: row-reverse;
+
+}

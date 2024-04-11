@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import ProjectService from "../services/ProjectService";
 import SectionCTA from "../components/SectionCTA/SectionCTA";
 import Project from "../components/Project/Project";
+import './Portfoliocss.css'
 
 //import SectionImage from "../components/SectionImage/SectionImage";
 
@@ -29,7 +30,7 @@ export default function Portfolio(){
         <div className = 'portfolio-page-container'>
       
         {projects.map ((project,index) =>(
-          <Project key={index} project = {project}/>        
+          <Project className = "single-project" key={index} project = {project}/>        
 ))
 }        
         </div>
