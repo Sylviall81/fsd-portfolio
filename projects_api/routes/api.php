@@ -22,6 +22,15 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
+//Rutas protegidas
+Route::group(['middleware' =>['auth:sanctum']],function(){
+    Route::post('/logout',[AuthController::class, 'logout']); 
+    Route::post('/register',[AuthController::class, 'register']);
+    //Route::post('/add-project',[ProjectController::class, 'store']);
+    
+});
+
+
 //Auth User
 
 Route::post('/login',[AuthController::class, 'login']); //Login
@@ -34,28 +43,11 @@ Route::get('/projects/{id}',[ProjectController::class, 'show']);//ver detalle de
 Route::post('/admin-panel',[ProjectController::class, 'store']);//guardar mensaje de contacto
 
 
-
 //mensajes de contacto
 Route::post('/contact-me',[ContactMessageController::class, 'store']);//guardar mensaje de contacto
 
 /**ver los mesajes de contacto, iria luego en middleware (admin panel)**/
 Route::get('/messages',[ContactMessageController::class, 'index']);
-
-
-
-
-
-
-
-//Rutas protegidas
-Route::group(['middleware' =>['auth:sanctum']],function(){
-
-    Route::post('/logout',[AuthController::class, 'logout']); 
-    Route::post('/register',[AuthController::class, 'register']);
-    //Route::post('/add-project',[ProjectController::class, 'store']);
-    
-});
-
 
 
 

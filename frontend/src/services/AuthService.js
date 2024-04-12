@@ -28,10 +28,23 @@ export const AuthService = () => {
         return res;
     }
 
-    const logout = () => {
+    /*const logout = () => {
         const res= axios.post(urnLogout)
         return res;
+    }*/
+
+    const logout = async () => {
+        try {
+            const res = await axios.post(urnLogout, null, { withCredentials: true });
+            return res.data;
+        } catch (error) {
+            throw error.response.data;
+        }
     }
+
+
+
+
 
     return {
         register,
