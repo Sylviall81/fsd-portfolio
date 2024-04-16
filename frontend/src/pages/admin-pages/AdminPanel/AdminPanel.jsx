@@ -38,7 +38,7 @@ function AdminPanel() {
   };
 
   const handlePrevClick = () => {
-    setPaginaActual(paginaActual + 1);
+    setPaginaActual(paginaActual - 1);
   };
 
 
