@@ -46,6 +46,7 @@ Route::post('/admin-panel',[ProjectController::class, 'store']);//guardar mensaj
 //mensajes de contacto
 Route::post('/contact-me',[ContactMessageController::class, 'store']);//guardar mensaje de contacto
 
+
 /**ver los mesajes de contacto, iria luego en middleware (admin panel)**/
 Route::get('/messages',[ContactMessageController::class, 'index']);
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import RegisterForm from "../../../components/RegisterForm/RegisterForm";
 import Layout from "../../../components/Layout";
 import "./AdminPanel.css";
@@ -6,10 +7,25 @@ import { AuthService } from "../../../services/AuthService";
 import ProjectForm from "../../../components/ProjectForm/ProjectForm";
 import MessageBoard from "../../../components/MessageBoard/MessageBoard";
 import { NavLink } from "react-router-dom";
+import ContactDataService from "../../../services/ContactMessageService";
+
 //import NewProjectForm from '../../../components/NewProjectForm/NewProjectForm'
 
 function AdminPanel() {
   const auth = AuthService();
+
+  const [contacts, setContacts] = useState([]);
+
+  useEffect(() =>{
+    ContactDataService.getAll().then(res => {
+      console.log(res)
+      setContacts(res.data);
+     }).catch(error => console.log(error))
+  },[])
+    
+     console.log('contacts',contacts)
+
+
 
   const handleLogout = (e) => {
     e.preventDefault();
@@ -50,6 +66,13 @@ function AdminPanel() {
         alert("Error al realizar la solicitud de logout. Por favor, inténtalo de nuevo más tarde.");
       });
   }; */
+
+
+
+
+  
+
+
 
   return (
     <>

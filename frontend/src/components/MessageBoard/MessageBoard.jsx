@@ -1,8 +1,9 @@
 import React from 'react'
 import './MessageBoard.css'
 
-function MessageBoard() {
+function MessageBoard({contact_id,name,subject,message,phone,email, contact_date}) {
 
+  
 
 
   return (
@@ -21,10 +22,12 @@ function MessageBoard() {
       </thead>
       <tbody>
         <tr>
-          <td className="message-board-cell"></td>
-          <td className="message-board-cell" colSpan={2}></td>
-          <td className="message-board-cell" colSpan={2}></td>
-          <td className="message-board-cell"></td>
+          <td className="message-board-cell">{name}</td>
+          <td className="message-board-cell">{subject}</td>
+          <td className="message-board-cell">Phone:{phone}</td>
+          <td className="message-board-cell">Email:{email}</td>
+          <td className="message-board-cell" colSpan={2}>{message}</td>
+          <td className="message-board-cell">{contact_date}</td>
         </tr>
       </tbody>
     </table>
