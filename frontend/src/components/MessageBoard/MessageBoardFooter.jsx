@@ -8,8 +8,10 @@ function MessageBoardFooter({startIndex,lastIndex,onNextClick, onPrevClick}) {
       <tr className="message-board-header-title">
 
 
-        <button onClick={onPrevClick}>Previous {'>>'}</button>
+        
         <td colSpan="100%"> Messages {startIndex}-{lastIndex} 
+        <br></br>
+        <button onClick={onPrevClick}>{'<<'} Previous </button>
         <button onClick={onNextClick}>Next {'>>'}</button>
           
         </td>

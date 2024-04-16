@@ -37,6 +37,10 @@ function AdminPanel() {
     setPaginaActual(paginaActual + 1);
   };
 
+  const handlePrevClick = () => {
+    setPaginaActual(paginaActual + 1);
+  };
+
 
   // Calcula los índices de los resultados a mostrar
   const calcularIndices = () => {
@@ -129,7 +133,7 @@ function AdminPanel() {
                 />
               ))}
               </tbody>
-              <MessageBoardFooter startIndex={startIndex} lastIndex={lastIndex} onNextClick={handleNextClick}/>
+              <MessageBoardFooter startIndex={startIndex} lastIndex={lastIndex} onPrevClick={handlePrevClick} onNextClick={handleNextClick}/>
             </table>
           </div>
 
