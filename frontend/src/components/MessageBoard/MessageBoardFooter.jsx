@@ -1,13 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./MessageBoard.css";
 
-function MessageBoardFooter({startIndex,lastIndex}) {
+function MessageBoardFooter({startIndex,lastIndex,onNextClick, onPrevClick}) {
+  
   return (
     <tfoot>
       <tr className="message-board-header-title">
-        <td colSpan="100%">
-          Messages {startIndex}-{lastIndex} <Link> Next {'>>'} </Link>
+
+
+        <button onClick={onPrevClick}>Previous {'>>'}</button>
+        <td colSpan="100%"> Messages {startIndex}-{lastIndex} 
+        <button onClick={onNextClick}>Next {'>>'}</button>
+          
         </td>
       </tr>
     </tfoot>

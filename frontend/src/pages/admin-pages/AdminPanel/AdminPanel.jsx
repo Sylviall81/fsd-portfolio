@@ -15,10 +15,12 @@ import '../../../components/MessageBoard/MessageBoard.css'
 //import NewProjectForm from '../../../components/NewProjectForm/NewProjectForm'
 
 function AdminPanel() {
-  const auth = AuthService();
 
+  const auth = AuthService();
   const [contacts, setContacts] = useState([]);
-  //const [index, setIndex] = useState([]);
+  const [paginaActual, setPaginaActual] = useState(1);
+  const resultadosPorPagina = 4; 
+
 
   useEffect(() => {
     ContactDataService.getAll()
@@ -30,6 +32,25 @@ function AdminPanel() {
   }, []);
 
   console.log("contacts", contacts);
+
+  const handleNextClick = () => {
+    setPaginaActual(paginaActual + 1);
+  };
+
+
+  // Calcula los índices de los resultados a mostrar
+  const calcularIndices = () => {
+    const startIndex = (paginaActual - 1) * resultadosPorPagina + 1;
+    const lastIndex = Math.min(startIndex + resultadosPorPagina - 1, contacts.length);
+    return { startIndex, lastIndex };
+  };
+
+
+  // Filtra los contactos a mostrar en función de la página actual
+  const contactosMostrados = contacts.slice((paginaActual - 1) * resultadosPorPagina, paginaActual * resultadosPorPagina);
+
+  // Calcula los índices de los contactos mostrados
+  const { startIndex, lastIndex } = calcularIndices();
 
   const handleLogout = (e) => {
     e.preventDefault();
@@ -93,7 +114,7 @@ function AdminPanel() {
           <MessageBoardHeader />
 
               <tbody>
-              {contacts.map((contact, index) => (
+              {contactosMostrados.map((contact, index) => (
                 
                 
                 <MessageBoard
@@ -108,7 +129,7 @@ function AdminPanel() {
                 />
               ))}
               </tbody>
-              <MessageBoardFooter startIndex = "1" lastIndex="5"/>
+              <MessageBoardFooter startIndex={startIndex} lastIndex={lastIndex} onNextClick={handleNextClick}/>
             </table>
           </div>
 
