@@ -14,6 +14,10 @@
     padding: 8px;
     text-align: left;
   }
+
+  
+
+
   .message-board-header-title {
     background-color: var(--accent-color);
     color: var(--bg-color);
@@ -36,4 +40,6 @@
   .message-board-row-even {
     background-color: #f2f2f2; /* Cambia el color de fondo según tu preferencia */
   }
+
+
   

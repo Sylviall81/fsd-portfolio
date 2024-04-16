@@ -8,6 +8,9 @@ import ProjectForm from "../../../components/ProjectForm/ProjectForm";
 import MessageBoard from "../../../components/MessageBoard/MessageBoard";
 import { NavLink } from "react-router-dom";
 import ContactDataService from "../../../services/ContactMessageService";
+import MessageBoardHeader from '../../../components/MessageBoard/MessageBoardHeader'
+import MessageBoardFooter from '../../../components/MessageBoard/MessageBoardFooter'
+import '../../../components/MessageBoard/MessageBoard.css'
 
 //import NewProjectForm from '../../../components/NewProjectForm/NewProjectForm'
 
@@ -16,16 +19,16 @@ function AdminPanel() {
 
   const [contacts, setContacts] = useState([]);
 
-  useEffect(() =>{
-    ContactDataService.getAll().then(res => {
-      console.log(res)
-      setContacts(res.data);
-     }).catch(error => console.log(error))
-  },[])
-    
-     console.log('contacts',contacts)
+  useEffect(() => {
+    ContactDataService.getAll()
+      .then((res) => {
+        console.log(res);
+        setContacts(res.data);
+      })
+      .catch((error) => console.log(error));
+  }, []);
 
-
+  console.log("contacts", contacts);
 
   const handleLogout = (e) => {
     e.preventDefault();
@@ -67,47 +70,55 @@ function AdminPanel() {
       });
   }; */
 
-
-
-
-  
-
-
-
   return (
     <>
       <Layout>
-
         <h1>
           AdminPanel
           <button onClick={handleLogout}>LogOut</button>
         </h1>
         <h3>Bienvenid@ a tu panel de administrador</h3>
-      
         <nav className="admin-nav">
-          <NavLink Link='#message-board'>Check Message Board</NavLink>
-          <NavLink Link='#new-project' >Add Projects</NavLink>
-          <NavLink Link='#new-admin'>Manage Users</NavLink>
+          <NavLink Link="#message-board">Check Message Board</NavLink>
+          <NavLink Link="#new-project">Add Projects</NavLink>
+          <NavLink Link="#new-admin">Manage Users</NavLink>
         </nav>
-      
+
         <div className="sections-wrapper">
+        
           <div id="message-board" className="message-board-container">
-            <MessageBoard />
+
+          <table className="message-board-table">
+          <MessageBoardHeader />
+
+              <tbody>
+              {contacts.map((contact, index) => (
+                <MessageBoard
+                  contact_id={index}
+                  name={contact.name}
+                  subject="info pdte"
+                  message={contact.message}
+                  phone={contact.phone}
+                  email={contact.email}
+                  contact_date={contact.updated_at}
+                />
+              ))}
+              </tbody>
+              <MessageBoardFooter />
+            </table>
           </div>
 
           <div className="row-container">
-              <div id="new-project" className="new-project-form">
-                <h3>Ingresa los datos de un nuevo proyecto:</h3>
-                <ProjectForm />
-              </div>
+            <div id="new-project" className="new-project-form">
+              <h3>Ingresa los datos de un nuevo proyecto:</h3>
+              <ProjectForm />
+            </div>
 
-              <div id="new-admin" className="register-form-container">
-                 <h3> Ingresa un nuevo usuario administrador</h3>
-                 <RegisterForm />
-               </div>
-
+            <div id="new-admin" className="register-form-container">
+              <h3> Ingresa un nuevo usuario administrador</h3>
+              <RegisterForm />
+            </div>
           </div>
-          
         </div>{" "}
         {/*cierre de section wrapper*/}
       </Layout>
