@@ -1,33 +1,33 @@
-import React from 'react'
-import RegisterForm from '../../../components/RegisterForm/RegisterForm'
-import Layout from '../../../components/Layout'
-import './AdminPanel.css'
-import { AuthService } from '../../../services/AuthService'
-import ProjectForm from '../../../components/ProjectForm/ProjectForm'
+import React from "react";
+import RegisterForm from "../../../components/RegisterForm/RegisterForm";
+import Layout from "../../../components/Layout";
+import "./AdminPanel.css";
+import { AuthService } from "../../../services/AuthService";
+import ProjectForm from "../../../components/ProjectForm/ProjectForm";
+import MessageBoard from "../../../components/MessageBoard/MessageBoard";
+import { NavLink } from "react-router-dom";
 //import NewProjectForm from '../../../components/NewProjectForm/NewProjectForm'
 
 function AdminPanel() {
-  
-
   const auth = AuthService();
 
-  
   const handleLogout = (e) => {
     e.preventDefault();
-    auth.logout()
-    .then(res => {
-      console.log(res);
-      localStorage.removeItem('auth_token')
-      alert(res.data.msg)
-    })
-    .catch(error => {
+    auth
+      .logout()
+      .then((res) => {
+        console.log(res);
+        localStorage.removeItem("auth_token");
+        alert(res.data.msg);
+      })
+      .catch((error) => {
         // Capturar errores en la solicitud de logout
         console.error("Error al realizar la solicitud de logout:", error);
-        alert("Error al realizar la solicitud de logout. Por favor, inténtalo de nuevo más tarde.");
+        alert(
+          "Error al realizar la solicitud de logout. Por favor, inténtalo de nuevo más tarde."
+        );
       });
-
-  }
-
+  };
 
   /*const handleLogout = (e) => {
     e.preventDefault();
@@ -50,43 +50,46 @@ function AdminPanel() {
         alert("Error al realizar la solicitud de logout. Por favor, inténtalo de nuevo más tarde.");
       });
   }; */
-  
-
-
-
-
-
 
   return (
     <>
-    <Layout>
+      <Layout>
 
         <h1>
-        AdminPanel
-           <button onClick={handleLogout} >LogOut</button>
+          AdminPanel
+          <button onClick={handleLogout}>LogOut</button>
         </h1>
         <h3>Bienvenid@ a tu panel de administrador</h3>
-
-        <div className = "sections-wrapper">
-
-            <div className="new-project-form">
-        
-              <h3>Ingresa los datos de un nuevo proyecto:</h3>
-                <ProjectForm />
-        
-            </div>
-
       
-            <div className="register-form-container">
-              <h3> Ingresa un nuevo usuario administrador</h3>
-              <RegisterForm />
-            </div>
+        <nav className="admin-nav">
+          <NavLink Link='#message-board'>Check Message Board</NavLink>
+          <NavLink Link='#new-project' >Add Projects</NavLink>
+          <NavLink Link='#new-admin'>Manage Users</NavLink>
+        </nav>
+      
+        <div className="sections-wrapper">
+          <div id="message-board" className="message-board-container">
+            <MessageBoard />
+          </div>
 
-        </div> {/*cierre de section wrapper*/}
-        </Layout>
+          <div className="row-container">
+              <div id="new-project" className="new-project-form">
+                <h3>Ingresa los datos de un nuevo proyecto:</h3>
+                <ProjectForm />
+              </div>
 
-        </>
-  )
+              <div id="new-admin" className="register-form-container">
+                 <h3> Ingresa un nuevo usuario administrador</h3>
+                 <RegisterForm />
+               </div>
+
+          </div>
+          
+        </div>{" "}
+        {/*cierre de section wrapper*/}
+      </Layout>
+    </>
+  );
 }
 
-export default AdminPanel
+export default AdminPanel;

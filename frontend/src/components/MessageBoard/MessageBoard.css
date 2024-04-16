@@ -1,0 +1,39 @@
+/* Estilos para el tablero de mensajes */
+
+/* Estilo para la tabla */
+.message-board-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para las celdas de encabezado */
+  .message-board-header {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    padding: 8px;
+    text-align: left;
+  }
+  .message-board-header-title {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Estilo para las celdas de datos */
+  .message-board-cell {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* Estilo para la fila de encabezado con colSpan */
+  .message-board-header-colspan {
+    background-color: #d9edf7; /* Cambia el color de fondo según tu preferencia */
+  }
+  
+  /* Estilo para la fila de datos alternativa */
+  .message-board-row-even {
+    background-color: #f2f2f2; /* Cambia el color de fondo según tu preferencia */
+  }
+  
