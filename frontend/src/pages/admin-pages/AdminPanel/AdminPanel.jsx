@@ -18,6 +18,7 @@ function AdminPanel() {
   const auth = AuthService();
 
   const [contacts, setContacts] = useState([]);
+  //const [index, setIndex] = useState([]);
 
   useEffect(() => {
     ContactDataService.getAll()
@@ -93,22 +94,25 @@ function AdminPanel() {
 
               <tbody>
               {contacts.map((contact, index) => (
+                
+                
                 <MessageBoard
-                  contact_id={index}
+                  contact_id={index+1}
                   name={contact.name}
                   subject="info pdte"
                   message={contact.message}
                   phone={contact.phone}
                   email={contact.email}
                   contact_date={contact.updated_at}
+
                 />
               ))}
               </tbody>
-              <MessageBoardFooter />
+              <MessageBoardFooter startIndex = "1" lastIndex="5"/>
             </table>
           </div>
 
-          <div className="row-container">
+          <div className="lower-container">
             <div id="new-project" className="new-project-form">
               <h3>Ingresa los datos de un nuevo proyecto:</h3>
               <ProjectForm />

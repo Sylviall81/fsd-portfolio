@@ -8,13 +8,14 @@
   }
   
   /* Estilos para el formulario */
-.contact-form {
+  .contact-form {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%; /* Ancho del formulario, ajusta según sea necesario */
   }
+  
   
   /* Estilos para las etiquetas de los campos */
   .contact-form-label {

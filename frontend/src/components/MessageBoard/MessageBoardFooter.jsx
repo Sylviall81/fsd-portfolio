@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./MessageBoard.css";
 
-function MessageBoardFooter() {
+function MessageBoardFooter({startIndex,lastIndex}) {
   return (
     <tfoot>
       <tr className="message-board-header-title">
         <td colSpan="100%">
-          Messages 1-5 <Link> Next {'>>'} </Link>
+          Messages {startIndex}-{lastIndex} <Link> Next {'>>'} </Link>
         </td>
       </tr>
     </tfoot>

@@ -7,11 +7,10 @@ function MessageBoardHeader() {
         <tr>
           <th className="message-board-header-title" colSpan="100%">
             {" "}
-            Recent Contacts{" "}
+            Latest Contacts{" "}
           </th>
         </tr>
         <tr>
-          <th className="message-board-header-colspan">Id</th>
           <th className="message-board-header-colspan">Name</th>
           <th className="message-board-header-colspan" colSpan={2}>
             Contact Info
