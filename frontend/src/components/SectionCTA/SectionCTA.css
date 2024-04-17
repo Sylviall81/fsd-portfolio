@@ -1,8 +1,7 @@
 .cta-section-container{
-    margin-top: 6em;
-    /*margin-left: 9.3em;*/
+    border: 1px black solid;;
+    padding: 3em 0;
     margin: 0 auto;
-    /*margin-bottom: 3.7em;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -12,10 +11,11 @@
 
 .cta-section-text-container{
     font-size: 2.18em; 
-    line-height: 42px;
+    line-height: 40px;
     font-family: var(--title-font);
-    width: 35%;
-
+    font-weight: 900;
+    width: 32%;
+    margin:0;
 }
 
 .cta-rule{
