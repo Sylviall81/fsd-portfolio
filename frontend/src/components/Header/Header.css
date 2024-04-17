@@ -1,15 +1,13 @@
 .header{
     border: black solid 0.5px;
-    /*margin: 2.3em;*/
     display: flex;
     justify-content: space-between;
-    height: 8em;
+    height: 6em;
     align-items: flex-end;
-    width:69.5em;
+    width:69em;
     padding:0;
-    /*margin-left: 5%;*/
-    position: relative;
-    left: 2.3rem ;
+    margin: 0 auto;
+    
 
 }
 
@@ -27,3 +25,5 @@
     height:100%;
    
 }
+
+

@@ -1,12 +1,12 @@
 .hero-section-container{
-    margin: 2.3em;
-    position: relative;
-    width: 69.56em;
+    border: black solid 0.5px;
+    width: 69em;
     height: 37.5em;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
     overflow: hidden;
+    margin: 2em auto;
     
 }
 
