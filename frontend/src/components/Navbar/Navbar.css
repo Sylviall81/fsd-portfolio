@@ -1,5 +1,6 @@
 
 .navlinks-container{
+  /*border: 0.5px solid blue;*/
   display: flex;
   height: 2em;
   width:20rem;
@@ -8,7 +9,7 @@
   font-weight: 600;
   font-size: 0.75em;
   line-height: 22px;
-  border: 0.5px solid blue;
+  
   letter-spacing: 0.2em;
   color: var(--primary-color)
   

@@ -2,13 +2,13 @@
 
     border-top: solid 0.5px lightgray;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     height: 8em;
     justify-content: space-between;
     /* position: fixed; */
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 69em;
     padding: 10px;
 
 }
@@ -16,38 +16,31 @@
 .logo-navlinks-container {
 
     width: 30vw;
-    height: 7.5em;
+    height: 100%;
     display: flex;
     align-items: center;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     /*margin-left: 10%;*/
     color:#203A4C;
 
 }
 
-.footer-logo-container {
-    height: 7.0em;
-    background-color: var(--primary-color);
-    display: flex;
-
-}
 
 .footer-img-logo {
     
     height: 7.0em;
-    object-fit: cover;
-   
+    object-fit: cover;   
 }
 
 .footer-social-network-container {
     background-color: #203A4C;
     display: flex;
-    width: 36%;
+    width: 10em;
     height: 3.2em;
     align-items: center;
-    margin-right: 20em;
     justify-content: space-around;
     border-radius:30px;
+    padding: 0.3em;
 }
 
 
