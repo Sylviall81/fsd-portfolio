@@ -1,33 +1,27 @@
 .footer-container {
 
-    border-top: solid 0.5px lightgray;
+    border-top: solid 0.5px var(--primary-color);
     display: flex;
     align-items: flex-end;
     height: 8em;
     justify-content: space-between;
-    /* position: fixed; */
-    bottom: 0;
-    left: 0;
     width: 69em;
-    padding: 10px;
+    padding: 15px;
+
 
 }
 
 .logo-navlinks-container {
-
-    width: 30vw;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /*margin-left: 10%;*/
-    color:#203A4C;
+    justify-content: space-around;
+   
 
 }
 
 
 .footer-img-logo {
-    
     height: 7.0em;
     object-fit: cover;   
 }
