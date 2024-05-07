@@ -3,7 +3,7 @@
     background-color: #203a4c;
     width: 14em;
     height: 4.1em;
-    font-size: 0.90em;
+    font-size: 0.70em;
     font-weight: 600;
     letter-spacing: 1px;
     display:flex;
@@ -24,7 +24,7 @@
 }
 
 .color-button:hover {
-    background-color: #5FB4A2;
+    background-color: var(--accent-color);
     color: var(--bg-color);
     cursor: pointer;
 }

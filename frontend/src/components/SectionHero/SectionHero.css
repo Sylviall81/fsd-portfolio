@@ -1,30 +1,37 @@
 .hero-section-container{
-    margin: 3.5em 12.5em;
-    position: relative;
-    background-image: url('https://res.cloudinary.com/dsesprxhl/image/upload/v1702062089/portfolio/pexels-picjumbocom-196655_jsplwv.jpg');
-    width: 77%;
-    height: 45em;
+    border: black solid 0.5px;
+    width: 69em;
+    height: 37.5em;
     display: flex;
-    background-size:cover;
     align-items: flex-end;
     justify-content: flex-start;
+    overflow: hidden;
+    margin: 1.5em auto;
+    
+}
+
+.hero-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     
 }
 
 .hero-section-text-container{
+    position:absolute;
     background-color: #fafafa;
-    height: 26em;
-    width: 35em;
+    height: 22.5em;
+    width: 27.6em;
     font-family: var(--title-font);
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
     padding-bottom: 0;
+    line-height: 3.12em;
     }
 
 .hero-section-title{
-    margin-top: 0;
-    font-size: 3.5em;
+    margin-top: 1em;
+    font-size: 50px;
     font-weight: 700;
-    
 }

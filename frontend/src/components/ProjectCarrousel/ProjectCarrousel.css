@@ -1,0 +1,41 @@
+.project-slider-full-container{
+    margin-left: 12.5em;
+    width: 77%;
+    border-top: solid lightgray 0.5px;
+    border-bottom: solid lightgray 0.5px;
+    height: 8em;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+  }
+  
+  .previous-project-container{
+    width: 50%;
+    border-right:solid lightgray 0.5px;
+    flex-direction: row;
+    
+   
+    
+  
+  }
+  
+  .next-project-container{
+    flex-direction: row;
+    justify-content: flex-start;
+   
+
+  }
+  
+  
+  .slider-invisible-button{
+    border:none;
+    background-color:transparent;
+    color: var(--primary-color)
+  
+  }
+  
+  .slider-invisible-button:hover{
+    color: var(--accent-color)
+  }
+  

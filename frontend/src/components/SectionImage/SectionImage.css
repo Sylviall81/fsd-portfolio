@@ -1,14 +1,20 @@
 .image-section-container{ 
+    border: solid black 1px;;
     display: flex;
     justify-content: space-around;
-    width: 70%;
-    margin-top: 8em; 
-    margin-left: 12.5em;
+    width: 69em;
+    margin: 8em auto; 
+    
 } 
 
+.image-section-container:nth-child(even){
+    flex-direction: row-reverse;
+} /* para el efecto de texto y foto derecha7izquierda subsecuente*/
+
 .aside-image-container{
-    width: 52%;
-   
+    width: 35rem;
+    height: 100%;
+  
 }
 
 .image{
@@ -21,21 +27,26 @@
 
 .text-container{
 
+    margin-left: 7em; 
     border-top: 0.2px solid lightgray;
     border-bottom: 0.2px solid lightgray;
-    width: 40%;
+    width: 22.5em;
+    height:auto;
+    
 } 
 
-.section-title{
-    margin-top: 2em;
-    font-size: 3em; 
+.section-image-section-title{
+    font-size: 2.5em; 
     font-family: var(--title-font);
+    line-height: 42px;
 }
 
 .text-content{
-    font-size: 1.3em;
-    line-height: 1.7em;
-    color: var(--button-hover-color)
+    font-size: 1em;
+    line-height: 1.8em;
+    color: var(--button-hover-color);
+    width: 99%;
+
 }
 
 .button-container{

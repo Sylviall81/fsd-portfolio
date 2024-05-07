@@ -1,12 +1,17 @@
 
 .navlinks-container{
+  /*border: 0.5px solid blue;*/
   display: flex;
   height: 2em;
-  width:140%;
+  width:20rem;
   justify-content: space-between;
   align-items: flex-end;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 0.75em;
+  line-height: 22px;
+  
+  letter-spacing: 0.2em;
+  color: var(--primary-color)
   
 }
 
@@ -19,13 +24,13 @@
 }
 
 .navlink:hover{
-    color: #5FB4A2;
+    color: var(--accent-color);
 }
 
 .active{
 
   font-weight: bold;
-  color: #5FB4A2;
+  color: var(--accent-color);
   justify-content: space-between;
 
 }

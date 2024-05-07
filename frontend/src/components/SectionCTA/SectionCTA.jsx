@@ -2,7 +2,7 @@ import React from 'react'
 import NeutralButton from '../ButtonNeutral/NeutralButton'
 import './SectionCTA.css'
 
-const SectionCTA = ({title}) =>{
+const SectionCTA = ({title, button_text, button_link}) =>{
   return (
     <>
 
@@ -15,7 +15,7 @@ const SectionCTA = ({title}) =>{
 
         </div>
     
-    <NeutralButton text= 'CONTACT ME' link="/contact-me"/>
+    <NeutralButton text= {button_text} link={button_link}/>
 
     </div>
     

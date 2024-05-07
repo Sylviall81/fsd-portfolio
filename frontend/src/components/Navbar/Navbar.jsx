@@ -6,9 +6,9 @@ import './Navbar.css'
   return (
     <div className="navlinks-container" >
 
-      <div>
+      
         <NavLink className='navlink' exact to= "/" activeClassName= 'active' style={{ color: textColor }}>HOME</NavLink>
-      </div>
+      
       
         <NavLink className='navlink' exact to= "/portfolio" activeClassName= 'active' style={{ color: textColor }}>PORTFOLIO</NavLink>
 

@@ -13,7 +13,7 @@ const SectionText = ({ title, content }) => {
           <h3>{title}</h3>
         </div>
 
-        <div className="text">
+        <div className="section-text-content">
           <p>{content}</p>
         
 
