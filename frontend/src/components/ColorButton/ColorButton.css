@@ -1,0 +1,34 @@
+.color-button{
+    color: var(--bg-color);
+    background-color: #203a4c;
+    width: 14em;
+    height: 4.1em;
+    font-size: 0.70em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border:none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.chevron-container{
+    margin-left:0;
+    height: 2em;
+    width: 3em;
+    margin:0;
+    
+}
+
+.color-button:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+.chevron-container:hover{
+    background-color: #57A594;
+
+}

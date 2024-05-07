@@ -1,0 +1,21 @@
+.contact-section-container{
+    margin-top: 3.5em;
+    /*margin-left: 12.5em;*/
+    width:77%;
+    border-top: solid lightgrey 0.2px;
+    display:flex;
+    flex-direction: row;
+}
+
+.section-title{
+    margin-top: 0;
+    width: 45%;
+}
+
+.form-container{
+    width: 70%;
+    font-size: 1.3em;
+    line-height: 1.7em;
+    margin-bottom: 2em;
+
+}

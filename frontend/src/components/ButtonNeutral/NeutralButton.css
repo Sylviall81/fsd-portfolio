@@ -1,0 +1,16 @@
+.neutral-button{
+    border: solid 0.2px var(--button-hover-color);
+    color: var(--button-hover-color);
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.75em;
+    width: 12em;
+    height: 3.1em;
+    letter-spacing: 1px;
+}
+
+.neutral-button:hover {
+    background-color: var(--button-hover-color);
+    color: var(--bg-color);
+}

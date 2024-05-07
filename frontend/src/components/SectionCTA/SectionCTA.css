@@ -1,0 +1,27 @@
+.cta-section-container{
+    border: 1px black solid;;
+    padding: 3em 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 69em;
+}
+
+
+.cta-section-text-container{
+    font-size: 2.18em; 
+    line-height: 40px;
+    font-family: var(--title-font);
+    font-weight: 900;
+    width: 32%;
+    margin:0;
+}
+
+.cta-rule{
+    border-top: 1px solid lightgray; /* Puedes ajustar el grosor y el color de la línea según tus necesidades */
+    margin: 20px 0;
+    width: 47%;
+    height: 0.01px;
+    
+}

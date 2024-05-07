@@ -1,0 +1,36 @@
+
+.navlinks-container{
+  /*border: 0.5px solid blue;*/
+  display: flex;
+  height: 2em;
+  width:20rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: 600;
+  font-size: 0.75em;
+  line-height: 22px;
+  
+  letter-spacing: 0.2em;
+  color: var(--primary-color)
+  
+}
+
+.navlink{
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+
+
+}
+
+.navlink:hover{
+    color: var(--accent-color);
+}
+
+.active{
+
+  font-weight: bold;
+  color: var(--accent-color);
+  justify-content: space-between;
+
+}

@@ -44,6 +44,8 @@ return [
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
             'local_domain' => env('MAIL_EHLO_DOMAIN'),
+            'admin_email' => 'sylviall81@gmail.com',
+
         ],
 
         'ses' => [
