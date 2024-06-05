@@ -9,7 +9,6 @@ import './Navbar.css'
       
         <NavLink className='navlink' exact to= "/" activeClassName= 'active' style={{ color: textColor }}>HOME</NavLink>
       
-      
         <NavLink className='navlink' exact to= "/portfolio" activeClassName= 'active' style={{ color: textColor }}>PORTFOLIO</NavLink>
 
         <NavLink className='navlink' exact to= "/contact-me" activeClassName= 'active' style={{ color: textColor }}>CONTACT ME</NavLink> 
