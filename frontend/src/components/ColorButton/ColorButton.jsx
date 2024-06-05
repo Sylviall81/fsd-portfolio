@@ -9,7 +9,7 @@ const ColorButton = ({ text,link,type }) => {
         <Link smooth to={link}>
           <button type={type} className="color-button">
             <div className="chevron-container">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 32 28">
                 <g fill="none" fill-rule="evenodd" stroke="#5FB4A2">
                   <path d="M0 9l16 8 16-8" />
                   <path opacity=".5" d="M0 5l16 8 16-8" />
